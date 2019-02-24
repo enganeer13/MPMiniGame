@@ -41,7 +41,7 @@ public class TrapMaster : MonoBehaviour
         }
 
         //Drop Box
-        if(Input.GetButtonDown("down"))
+        if(Input.GetButtonDown("Vertical2"))
         {
             ObjectPooler.Instance.SpawnFromPool("Box", transform.position, Quaternion.identity);
         }
