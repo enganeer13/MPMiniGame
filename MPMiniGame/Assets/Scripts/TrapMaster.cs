@@ -7,9 +7,11 @@ public class TrapMaster : MonoBehaviour
     public float speed = 10f;
     public float clampOffset = 10f;
     public float bounciness = .5f;
+
     private Rigidbody2D body;
     private Camera cam;
     private float leftBound, rightBound;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -44,6 +46,14 @@ public class TrapMaster : MonoBehaviour
         if(Input.GetButtonDown("Vertical2"))
         {
             ObjectPooler.Instance.SpawnFromPool("Box", transform.position, Quaternion.identity);
+        }
+        if(Input.GetButtonDown("shift"))
+        {
+            RaycastHit2D ray = Physics2D.Raycast(transform.position, Vector2.down);
+            if(ray.collider.GetComponent<Trap>() != null)
+            {
+                ray.collider.GetComponent<Trap>().activate();
+            }
         }
     }
 }
