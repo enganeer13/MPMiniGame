@@ -47,6 +47,8 @@ public class TrapMaster : MonoBehaviour
         {
             ObjectPooler.Instance.SpawnFromPool("Box", transform.position, Quaternion.identity);
         }
+
+        //Trigger Active trap
         if(Input.GetButtonDown("shift"))
         {
             RaycastHit2D ray = Physics2D.Raycast(transform.position, Vector2.down);
