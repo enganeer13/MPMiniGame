@@ -182,7 +182,7 @@ PrefabInstance:
     - target: {fileID: 4395800182632249171, guid: f190090fa8bfefe48901c76436fba2ca,
         type: 3}
       propertyPath: pools.Array.size
-      value: 1
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 4395800182632249171, guid: f190090fa8bfefe48901c76436fba2ca,
         type: 3}
@@ -200,6 +200,70 @@ PrefabInstance:
       propertyPath: pools.Array.data[0].tag
       value: Box
       objectReference: {fileID: 0}
+    - target: {fileID: 4395800182632249171, guid: f190090fa8bfefe48901c76436fba2ca,
+        type: 3}
+      propertyPath: pools.Array.data[1].tag
+      value: preset1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4395800182632249171, guid: f190090fa8bfefe48901c76436fba2ca,
+        type: 3}
+      propertyPath: pools.Array.data[1].prefab
+      value: 
+      objectReference: {fileID: 1701700753677203275, guid: 5dff1bf87320a0f4695fd3936bc54335,
+        type: 3}
+    - target: {fileID: 4395800182632249171, guid: f190090fa8bfefe48901c76436fba2ca,
+        type: 3}
+      propertyPath: pools.Array.data[1].size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4395800182632249171, guid: f190090fa8bfefe48901c76436fba2ca,
+        type: 3}
+      propertyPath: pools.Array.data[2].tag
+      value: preset2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4395800182632249171, guid: f190090fa8bfefe48901c76436fba2ca,
+        type: 3}
+      propertyPath: pools.Array.data[2].prefab
+      value: 
+      objectReference: {fileID: 1738962844692946595, guid: 1c19f7ddfda90a2429dc71a0d86de92f,
+        type: 3}
+    - target: {fileID: 4395800182632249171, guid: f190090fa8bfefe48901c76436fba2ca,
+        type: 3}
+      propertyPath: pools.Array.data[2].size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4395800182632249171, guid: f190090fa8bfefe48901c76436fba2ca,
+        type: 3}
+      propertyPath: pools.Array.data[3].tag
+      value: preset3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4395800182632249171, guid: f190090fa8bfefe48901c76436fba2ca,
+        type: 3}
+      propertyPath: pools.Array.data[3].prefab
+      value: 
+      objectReference: {fileID: 6456893885176676359, guid: f202668cc0043a44e80568c76fed4f71,
+        type: 3}
+    - target: {fileID: 4395800182632249171, guid: f190090fa8bfefe48901c76436fba2ca,
+        type: 3}
+      propertyPath: pools.Array.data[3].size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4395800182632249171, guid: f190090fa8bfefe48901c76436fba2ca,
+        type: 3}
+      propertyPath: pools.Array.data[4].tag
+      value: preset4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4395800182632249171, guid: f190090fa8bfefe48901c76436fba2ca,
+        type: 3}
+      propertyPath: pools.Array.data[4].prefab
+      value: 
+      objectReference: {fileID: 4620253192096234006, guid: 7fb751b7b2507a543a22d2da2b59d632,
+        type: 3}
+    - target: {fileID: 4395800182632249171, guid: f190090fa8bfefe48901c76436fba2ca,
+        type: 3}
+      propertyPath: pools.Array.data[4].size
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f190090fa8bfefe48901c76436fba2ca, type: 3}
 --- !u!1 &519420028
@@ -214,7 +278,7 @@ GameObject:
   - component: {fileID: 519420031}
   - component: {fileID: 519420029}
   - component: {fileID: 519420030}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Main Camera
   m_TagString: MainCamera
   m_Icon: {fileID: 0}
@@ -366,6 +430,23 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 666842440608361882, guid: 6fbb222a3af373e478cd4944d16637f2,
+        type: 3}
+      propertyPath: presets.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 666842440608361882, guid: 6fbb222a3af373e478cd4944d16637f2,
+        type: 3}
+      propertyPath: presets.Array.data[2]
+      value: 
+      objectReference: {fileID: 6456893885176676359, guid: f202668cc0043a44e80568c76fed4f71,
+        type: 3}
+    - target: {fileID: 666842440608361882, guid: 6fbb222a3af373e478cd4944d16637f2,
+        type: 3}
+      propertyPath: presets.Array.data[3]
+      value: 
+      objectReference: {fileID: 4620253192096234006, guid: 7fb751b7b2507a543a22d2da2b59d632,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6fbb222a3af373e478cd4944d16637f2, type: 3}
 --- !u!4 &1602237427 stripped

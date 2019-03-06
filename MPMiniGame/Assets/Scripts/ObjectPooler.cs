@@ -23,7 +23,7 @@ public class ObjectPooler : MonoBehaviour {
     }
     #endregion
 
-    private void Start()
+    public int Start()
     {
         poolDictionary = new Dictionary<string, Queue<GameObject>>();
         foreach(Pool pool in pools)
@@ -38,6 +38,7 @@ public class ObjectPooler : MonoBehaviour {
             }
             poolDictionary.Add(pool.tag, objectPool);
         }
+        return 0;
     }
 
     public GameObject SpawnFromPool (string tag, Vector3 position, Quaternion rotation)
@@ -53,11 +54,7 @@ public class ObjectPooler : MonoBehaviour {
         objectToSpawn.transform.rotation = rotation;
 
         poolDictionary[tag].Enqueue(objectToSpawn);
+        
         return objectToSpawn;
-    }
-
-    public void Enqueue(GameObject g)
-    {
-        poolDictionary[g.name].Enqueue(g);
     }
 }

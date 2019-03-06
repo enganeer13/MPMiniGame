@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 9103666468298911963}
   - component: {fileID: 1607487886695880666}
   - component: {fileID: 440004774670594468}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Preset1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -58,6 +58,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 633f835ae07b36e488951bb46b620193, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  name: preset1
 --- !u!1 &1773899531987489369
 GameObject:
   m_ObjectHideFlags: 0

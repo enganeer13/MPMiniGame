@@ -5,6 +5,8 @@ using UnityEngine.Tilemaps;
 
 public class LevelChunk : MonoBehaviour
 {
+    public string name;
+
     private int width;
     private Tilemap tileMap;
     // Start is called before the first frame update
@@ -18,6 +20,6 @@ public class LevelChunk : MonoBehaviour
 
     public int getWidth()
     {
-        return tileMap.size.x;
+        return width;
     }
 }
