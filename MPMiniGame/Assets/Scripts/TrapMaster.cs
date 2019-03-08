@@ -7,14 +7,21 @@ public class TrapMaster : MonoBehaviour
     public float speed = 10f;
     public float clampOffset = 10f;
     public float bounciness = .5f;
+
+    public List<GameObject> spawnable;
+    private int spawnIndex;
+    
     private Rigidbody2D body;
     private Camera cam;
     private float leftBound, rightBound;
+
     // Start is called before the first frame update
     void Start()
     {
         body = GetComponent<Rigidbody2D>();
         cam = FindObjectOfType<Camera>();
+
+        spawnIndex = 0;
     }
 
     // Update is called once per frame
@@ -40,10 +47,31 @@ public class TrapMaster : MonoBehaviour
             body.velocity = -body.velocity * bounciness;
         }
 
-        //Drop Box
+        //Drop Spawnable
         if(Input.GetButtonDown("Vertical2"))
         {
-            ObjectPooler.Instance.SpawnFromPool("Box", transform.position, Quaternion.identity);
+            ObjectPooler.Instance.SpawnFromPool(spawnable[spawnIndex].name, transform.position, Quaternion.identity);
+        }
+
+        //Cycle Spawnable
+        if(Input.GetButtonDown("SelectorMinus"))
+        {
+            spawnIndex = (spawnIndex <= 0) ? spawnable.Count - 1 : spawnIndex - 1;
+        }
+
+        if (Input.GetButtonDown("SelectorPlus"))
+        {
+            spawnIndex = (spawnIndex < spawnable.Count - 1) ? spawnIndex + 1 : 0;
+        }
+
+        //Trigger Active trap
+        if (Input.GetButtonDown("shift"))
+        {
+            RaycastHit2D ray = Physics2D.Raycast(transform.position, Vector2.down);
+            if(ray.collider.GetComponent<Trap>() != null)
+            {
+                ray.collider.GetComponent<Trap>().activate();
+            }
         }
     }
 }
