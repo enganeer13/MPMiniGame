@@ -209,7 +209,7 @@ PrefabInstance:
         type: 3}
       propertyPath: pools.Array.data[1].prefab
       value: 
-      objectReference: {fileID: 1701700753677203275, guid: 5dff1bf87320a0f4695fd3936bc54335,
+      objectReference: {fileID: 1738962844692946595, guid: 275544cb42152f14f93aabb976172eb4,
         type: 3}
     - target: {fileID: 4395800182632249171, guid: f190090fa8bfefe48901c76436fba2ca,
         type: 3}
@@ -356,7 +356,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 519420028}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -10}
+  m_LocalPosition: {x: 9, y: 0, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1602237427}
@@ -446,6 +446,12 @@ PrefabInstance:
       propertyPath: presets.Array.data[3]
       value: 
       objectReference: {fileID: 4620253192096234006, guid: 7fb751b7b2507a543a22d2da2b59d632,
+        type: 3}
+    - target: {fileID: 666842440608361882, guid: 6fbb222a3af373e478cd4944d16637f2,
+        type: 3}
+      propertyPath: presets.Array.data[0]
+      value: 
+      objectReference: {fileID: 1738962844692946595, guid: 275544cb42152f14f93aabb976172eb4,
         type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6fbb222a3af373e478cd4944d16637f2, type: 3}
