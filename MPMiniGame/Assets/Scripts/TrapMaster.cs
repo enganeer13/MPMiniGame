@@ -50,7 +50,8 @@ public class TrapMaster : MonoBehaviour
         //Drop Spawnable
         if(Input.GetButtonDown("Vertical2"))
         {
-            ObjectPooler.Instance.SpawnFromPool(spawnable[spawnIndex].name, transform.position, Quaternion.identity);
+            GameObject g = ObjectPooler.Instance.SpawnFromPool(spawnable[spawnIndex].name, transform.position, Quaternion.identity);
+            g.GetComponent<Rigidbody2D>().velocity = Vector2.zero;
         }
 
         //Cycle Spawnable
