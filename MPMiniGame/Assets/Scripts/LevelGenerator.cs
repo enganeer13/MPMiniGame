@@ -5,7 +5,6 @@ using UnityEngine;
 public class LevelGenerator : MonoBehaviour
 {
     public GameObject[] presets;
-    public int levelLength = 10;
 
     private Camera cam;
     private GameObject left;
