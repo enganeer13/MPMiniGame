@@ -31,7 +31,7 @@ Transform:
   m_GameObject: {fileID: 17894089192988839}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -6.429, y: -0.21, z: 0}
-  m_LocalScale: {x: 0.768, y: 0.768, z: 0.768}
+  m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_Children:
   - {fileID: 17894089750453796}
   - {fileID: 17894089579267022}
@@ -171,7 +171,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 39a680c44058040d6a87cf2560f9df67, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_JumpForce: 3000
+  m_JumpForce: 2500
   m_CrouchSpeed: 0.36
   m_MovementSmoothing: 0
   m_AirControl: 1
@@ -200,7 +200,7 @@ MonoBehaviour:
   OnCrouchEvent:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: characterController+BoolEvent, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+    m_TypeName: CharacterController+BoolEvent, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
 --- !u!1 &17894089579267023
 GameObject:

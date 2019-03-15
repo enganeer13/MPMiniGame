@@ -182,7 +182,7 @@ public class PickupController : MonoBehaviour, IPunObservable
 
             // Move the controller
             CharacterController controller = GetComponent<CharacterController>();
-            this.collisionFlags = controller.Move(movement);
+            //this.collisionFlags = controller.Move(movement);
 
         }
 

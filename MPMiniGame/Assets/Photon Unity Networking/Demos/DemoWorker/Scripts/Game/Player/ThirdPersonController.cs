@@ -315,7 +315,7 @@ public class ThirdPersonController : MonoBehaviour
 
             // Move the controller
             CharacterController controller = GetComponent<CharacterController>();
-            collisionFlags = controller.Move(movement);
+            //collisionFlags = controller.Move(movement);
         }
         velocity = (transform.position - lastPos)*25;
 

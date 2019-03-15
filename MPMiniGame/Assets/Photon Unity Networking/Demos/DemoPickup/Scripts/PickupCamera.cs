@@ -62,16 +62,16 @@ public class PickupCamera : Photon.MonoBehaviour
             controller = _target.GetComponent<PickupController>();
         }
 
-        if( controller )
+        /*if( controller )
         {
-            CharacterController characterController = (CharacterController)_target.GetComponent<Collider>();
-            centerOffset = characterController.bounds.center - _target.position;
+            CharacterController CharacterController = (CharacterController)_target.GetComponent<Collider>();
+            centerOffset = CharacterController.bounds.center - _target.position;
             headOffset = centerOffset;
-            headOffset.y = characterController.bounds.max.y - _target.position.y;
+            headOffset.y = CharacterController.bounds.max.y - _target.position.y;
         }
         else
             Debug.Log( "Please assign a target to the camera that has a ThirdPersonController script attached." );
-
+*/
 
         Cut( _target, centerOffset );
     }

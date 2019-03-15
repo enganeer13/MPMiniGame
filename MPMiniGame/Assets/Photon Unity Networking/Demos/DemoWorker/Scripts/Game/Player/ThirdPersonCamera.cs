@@ -55,13 +55,13 @@ public class ThirdPersonCamera : MonoBehaviour
             controller = _target.GetComponent<ThirdPersonController>();
         }
 
-        if( controller )
+        /*if( controller )
         {
             CharacterController characterController = (CharacterController)_target.GetComponent<Collider>();
             centerOffset = characterController.bounds.center - _target.position;
             headOffset = centerOffset;
             headOffset.y = characterController.bounds.max.y - _target.position.y;
-        }
+        }*/
         else
             Debug.Log( "Please assign a target to the camera that has a ThirdPersonController script attached." );
 
