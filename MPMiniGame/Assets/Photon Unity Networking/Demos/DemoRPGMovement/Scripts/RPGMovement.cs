@@ -39,8 +39,8 @@ public class RPGMovement : MonoBehaviour
             UpdateBackwardMovement();
             UpdateStrafeMovement();
 
-            MoveCharacterController();
-            ApplyGravityToCharacterController();
+            //MoveCharacterController();
+            //ApplyGravityToCharacterController();
 
             ApplySynchronizedValues();
         }
@@ -92,7 +92,7 @@ public class RPGMovement : MonoBehaviour
     {
         m_TransformView.SetSynchronizedValues( m_CurrentMovement, m_CurrentTurnSpeed );
     }
-
+    /*
     void ApplyGravityToCharacterController()
     {
         m_CharacterController.Move( transform.up * Time.deltaTime * -9.81f );
@@ -102,7 +102,7 @@ public class RPGMovement : MonoBehaviour
     {
         m_CharacterController.Move( m_CurrentMovement * Time.deltaTime );
     }
-
+*/
     void UpdateForwardMovement()
     {
         if( Input.GetKey( KeyCode.W ) || Input.GetAxisRaw("Vertical") > 0.1f )

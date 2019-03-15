@@ -129,7 +129,7 @@ namespace ExitGames.Demos.DemoAnimator
 
 			// Get data from the Player that won't change during the lifetime of this Component
 			if (_characterController != null){
-				_characterControllerHeight = _characterController.height;
+				//_characterControllerHeight = _characterController.height;
 			}
 
 			if (PlayerNameText != null) {
