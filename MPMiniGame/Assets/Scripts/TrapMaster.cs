@@ -10,6 +10,9 @@ public class TrapMaster : MonoBehaviour
 
     public List<GameObject> spawnable;
     private int spawnIndex;
+
+    public List<float> maxCooldowns;
+    public float[] cooldowns;
     
     private Rigidbody2D body;
     private Camera cam;
@@ -22,6 +25,9 @@ public class TrapMaster : MonoBehaviour
         cam = FindObjectOfType<Camera>();
 
         spawnIndex = 0;
+
+        Debug.Assert(spawnable.Count == maxCooldowns.Count, "Cooldown list must be same length as spawnable list.");
+        cooldowns = new float[maxCooldowns.Count];
     }
 
     // Update is called once per frame
@@ -47,11 +53,16 @@ public class TrapMaster : MonoBehaviour
             body.velocity = -body.velocity * bounciness;
         }
 
+        //Decrease cooldowns
+        for (int i = 0; i < cooldowns.Length; i++)
+            cooldowns[i] = Mathf.Max(0f, cooldowns[i] - Time.deltaTime);
+
         //Drop Spawnable
-        if(Input.GetButtonDown("Vertical2"))
+        if(Input.GetButtonDown("Vertical2") && cooldowns[spawnIndex] <= 0f)
         {
             GameObject g = ObjectPooler.Instance.SpawnFromPool(spawnable[spawnIndex].name, transform.position, Quaternion.identity);
             g.GetComponent<Rigidbody2D>().velocity = Vector2.zero;
+            cooldowns[spawnIndex] = maxCooldowns[spawnIndex];
         }
 
         //Cycle Spawnable
