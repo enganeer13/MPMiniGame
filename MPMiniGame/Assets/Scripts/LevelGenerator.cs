@@ -41,6 +41,7 @@ public class LevelGenerator : MonoBehaviour
 
     void Update()
     {
+        //if a middle chunk exists and the camera's right bounds exceeds the middle of it, shuffle
         if (middle.name != "")
         {
             if (cam.ViewportToWorldPoint(new Vector3(1, 0, -10)).x >= middle.transform.position.x + middle.GetComponent<LevelChunk>().getWidth()/2)

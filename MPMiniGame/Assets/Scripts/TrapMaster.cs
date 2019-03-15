@@ -68,10 +68,14 @@ public class TrapMaster : MonoBehaviour
         //Trigger Active trap
         if (Input.GetButtonDown("shift"))
         {
-            RaycastHit2D ray = Physics2D.Raycast(transform.position, Vector2.down);
-            if(ray.collider.GetComponent<Trap>() != null)
+            RaycastHit2D[] rays = Physics2D.RaycastAll(transform.position, Vector2.down);
+            foreach(RaycastHit2D ray in rays)
             {
-                ray.collider.GetComponent<Trap>().activate();
+                Debug.Log(ray.collider);
+                if (ray.collider.GetComponent<Trap>() != null)
+                {
+                    ray.collider.GetComponent<Trap>().activate();
+                }
             }
         }
     }
