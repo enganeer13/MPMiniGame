@@ -179,43 +179,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4395800182632249171, guid: f190090fa8bfefe48901c76436fba2ca,
-        type: 3}
-      propertyPath: pools.Array.size
-      value: 7
-      objectReference: {fileID: 0}
-    - target: {fileID: 4395800182632249171, guid: f190090fa8bfefe48901c76436fba2ca,
-        type: 3}
-      propertyPath: pools.Array.data[5].tag
-      value: glue
-      objectReference: {fileID: 0}
-    - target: {fileID: 4395800182632249171, guid: f190090fa8bfefe48901c76436fba2ca,
-        type: 3}
-      propertyPath: pools.Array.data[5].prefab
-      value: 
-      objectReference: {fileID: 1050375432710741748, guid: ee79c1647cf4f044f9d010b977f5a037,
-        type: 3}
-    - target: {fileID: 4395800182632249171, guid: f190090fa8bfefe48901c76436fba2ca,
-        type: 3}
-      propertyPath: pools.Array.data[5].size
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 4395800182632249171, guid: f190090fa8bfefe48901c76436fba2ca,
-        type: 3}
-      propertyPath: pools.Array.data[6].tag
-      value: GlueDrop
-      objectReference: {fileID: 0}
-    - target: {fileID: 4395800182632249171, guid: f190090fa8bfefe48901c76436fba2ca,
-        type: 3}
-      propertyPath: pools.Array.data[6].prefab
-      value: 
-      objectReference: {fileID: 4891710461677162776, guid: 766f6ceff8df3034ebdf95e093e51ece,
-        type: 3}
-    - target: {fileID: 4395800182632249171, guid: f190090fa8bfefe48901c76436fba2ca,
-        type: 3}
-      propertyPath: pools.Array.data[6].size
-      value: 3
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f190090fa8bfefe48901c76436fba2ca, type: 3}
 --- !u!1001 &268585838
@@ -233,12 +196,12 @@ PrefabInstance:
     - target: {fileID: 17894089192988833, guid: 4eeb4371fb01247f8bd97446bb4746af,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 1.621737
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 17894089192988833, guid: 4eeb4371fb01247f8bd97446bb4746af,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.7278538
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 17894089192988833, guid: 4eeb4371fb01247f8bd97446bb4746af,
         type: 3}

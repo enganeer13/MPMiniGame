@@ -64,3 +64,11 @@ MonoBehaviour:
     prefab: {fileID: 1738962844692946595, guid: 834e4eddaa1f7324fb786e9aad5154c0,
       type: 3}
     size: 1
+  - tag: glue
+    prefab: {fileID: 1050375432710741748, guid: ee79c1647cf4f044f9d010b977f5a037,
+      type: 3}
+    size: 10
+  - tag: GlueDrop
+    prefab: {fileID: 4891710461677162776, guid: 766f6ceff8df3034ebdf95e093e51ece,
+      type: 3}
+    size: 3
