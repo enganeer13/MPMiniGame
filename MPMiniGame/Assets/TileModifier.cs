@@ -13,10 +13,9 @@ public class TileModifier : MonoBehaviour
         Tilemap tileMap = collision.gameObject.GetComponent<Tilemap>();
         if (tileMap)
         {
-            GridLayout grid = tileMap.GetComponentInParent<GridLayout>();
-            Vector3 v = grid.WorldToCell(collision.GetContact(0).point);
-            v.x += .5f;
-            v.y += .5f;
+            Vector3 v = collision.GetContact(0).point;
+            v.y -= .5f;
+            v.x =  v.x - tileMap.WorldToCell(collision.GetContact(0).point).x - 0.5f < tileMap.WorldToCell(collision.GetContact(0).point).x + 0.5f - v.x ? tileMap.WorldToCell(collision.GetContact(0).point).x - 0.5f : tileMap.WorldToCell(collision.GetContact(0).point).x + 0.5f;
             ObjectPooler.Instance.SpawnFromPool(tag, v, Quaternion.identity);
             gameObject.SetActive(false);
         }

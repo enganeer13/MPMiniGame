@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 4891710461677162772}
   - component: {fileID: 4891710461677162775}
   - component: {fileID: 4891710461677162774}
-  - component: {fileID: 4891710461677162777}
+  - component: {fileID: 2229320452962135220}
   m_Layer: 0
   m_Name: GlueDrop
   m_TagString: Untagged
@@ -117,7 +117,7 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!58 &4891710461677162777
+--- !u!58 &2229320452962135220
 CircleCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
