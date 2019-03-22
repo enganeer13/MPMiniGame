@@ -27,6 +27,7 @@ public class Turbine : MonoBehaviour, Trap
     }
     public void activate()
     {
+        //activate wind hitbox
         windBox.enabled = windBox.enabled ? false : true;
         particles.enableEmission = particles.enableEmission ? false : true;
     }

@@ -10,6 +10,7 @@ public class Wind : MonoBehaviour
 
     private void OnTriggerStay2D(Collider2D collision)
     {
+        //move everything in hitbox
         collision.attachedRigidbody.AddForce(force * direction);
     }
 }

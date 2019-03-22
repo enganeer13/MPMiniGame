@@ -61,7 +61,6 @@ public class TrapMaster : MonoBehaviour
         if(Input.GetButtonDown("Vertical2") && cooldowns[spawnIndex] <= 0f)
         {
             GameObject g = ObjectPooler.Instance.SpawnFromPool(spawnable[spawnIndex].name, transform.position, Quaternion.identity);
-            g.GetComponent<Rigidbody2D>().velocity = Vector2.zero;
             cooldowns[spawnIndex] = maxCooldowns[spawnIndex];
         }
 
@@ -79,10 +78,9 @@ public class TrapMaster : MonoBehaviour
         //Trigger Active trap
         if (Input.GetButtonDown("shift"))
         {
-            RaycastHit2D[] rays = Physics2D.RaycastAll(transform.position, Vector2.down);
+            RaycastHit2D[] rays = Physics2D.BoxCastAll(transform.position, new Vector2(1, 1), 0, Vector2.down);
             foreach(RaycastHit2D ray in rays)
             {
-                Debug.Log(ray.collider);
                 if (ray.collider.GetComponent<Trap>() != null)
                 {
                     ray.collider.GetComponent<Trap>().activate();

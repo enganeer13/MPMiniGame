@@ -5,9 +5,8 @@ using UnityEngine.Tilemaps;
 
 public class TileModifier : MonoBehaviour
 {
-    public GameObject modifier;
     public string tag;
-
+    //(Try to) detect tile hit and spawn glue on it
     private void OnCollisionEnter2D(Collision2D collision)
     {
         Tilemap tileMap = collision.gameObject.GetComponent<Tilemap>();
