@@ -44,12 +44,12 @@ public class TrapMaster : MonoBehaviour
         //Clamp x position between camera bounds and add bounce
         if(transform.position.x < leftBound + clampOffset )
         {
-            transform.position = new Vector2(leftBound + clampOffset, 3f);
+            transform.position = new Vector2(leftBound + clampOffset, 4.5f);
             body.velocity = -body.velocity * bounciness;
         }
         if(transform.position.x > rightBound - clampOffset)
         {
-            transform.position = new Vector2(rightBound - clampOffset, 3f);
+            transform.position = new Vector2(rightBound - clampOffset, 4.5f);
             body.velocity = -body.velocity * bounciness;
         }
 
