@@ -8,7 +8,7 @@ public class Spikes : MonoBehaviour
     public bool active;
     public float timer;
     private Vector3 direction;
-    private Vector3 defaultPosition;
+    private Vector3 defaultRelative;
     private BoxCollider2D spikesCollider;
     // Start is called before the first frame update
     void Start()
@@ -21,28 +21,30 @@ public class Spikes : MonoBehaviour
         direction.Normalize();
         //Get default spike resting position
         spikesCollider = spikes.GetComponentInChildren<BoxCollider2D>();
-        defaultPosition = spikes.transform.position;
+        defaultRelative = transform.position - spikes.transform.position;
         //Set spikes triggered by default if active is true
         if (active)
             triggerSpikes();
+        else
+            retractSpikes();
     }
     void readySpikes()
     {
-        spikes.transform.position = defaultPosition + direction * .4f;
+        spikes.transform.position = transform.position - defaultRelative + direction * .3f;
     }
     
     //activate trap
     void triggerSpikes()
     {
         active = true;
-        spikes.transform.position = defaultPosition + direction;
+        spikes.transform.position = transform.position - defaultRelative + direction;
     }
 
     //deactiveate trap
     void retractSpikes()
     {
         active = false;
-        spikes.transform.position = defaultPosition;
+        spikes.transform.position = transform.position - defaultRelative;
     }
 
     private void OnTriggerEnter2D(Collider2D collision)

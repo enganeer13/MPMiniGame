@@ -13,8 +13,7 @@ public class TileModifier : MonoBehaviour
         if (tileMap)
         {
             Vector3 v = collision.GetContact(0).point;
-            v.y -= .5f;
-            v.x =  v.x - tileMap.WorldToCell(collision.GetContact(0).point).x - 0.5f < tileMap.WorldToCell(collision.GetContact(0).point).x + 0.5f - v.x ? tileMap.WorldToCell(collision.GetContact(0).point).x - 0.5f : tileMap.WorldToCell(collision.GetContact(0).point).x + 0.5f;
+            v = tileMap.GetCellCenterWorld(tileMap.WorldToCell(v));
             ObjectPooler.Instance.SpawnFromPool(tag, v, Quaternion.identity);
             gameObject.SetActive(false);
         }
