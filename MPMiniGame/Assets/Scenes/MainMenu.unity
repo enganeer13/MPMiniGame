@@ -694,7 +694,8 @@ AudioSource:
   m_GameObject: {fileID: 1547030830}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: 24300002, guid: 4e27ae34389e11940b917650debe60d6,
+    type: 2}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 1
   m_Volume: 0.801
@@ -711,7 +712,7 @@ AudioSource:
   rolloffMode: 0
   BypassEffects: 0
   BypassListenerEffects: 0
-  BypassReverbZones: 0
+  BypassReverbZones: 1
   rolloffCustomCurve:
     serializedVersion: 2
     m_Curve:
@@ -911,7 +912,7 @@ PrefabInstance:
     - target: {fileID: 3811204000496667216, guid: eaea30ca2f6638a47a571915b9c3a42d,
         type: 3}
       propertyPath: desiredSceneIndex
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3811204000496667219, guid: eaea30ca2f6638a47a571915b9c3a42d,
         type: 3}
@@ -1239,7 +1240,7 @@ PrefabInstance:
     - target: {fileID: 3811204000496667216, guid: eaea30ca2f6638a47a571915b9c3a42d,
         type: 3}
       propertyPath: desiredSceneIndex
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 3811204000496667219, guid: eaea30ca2f6638a47a571915b9c3a42d,
         type: 3}
