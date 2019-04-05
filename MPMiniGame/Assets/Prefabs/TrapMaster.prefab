@@ -96,6 +96,13 @@ MonoBehaviour:
   speed: 5000
   clampOffset: 0.05
   bounciness: 1.5
+  spawnable:
+  - {fileID: 2940030034227328971, guid: 4e5c28d154fa51b4e922ba0e52dfa24e, type: 3}
+  - {fileID: 4891710461677162776, guid: 766f6ceff8df3034ebdf95e093e51ece, type: 3}
+  maxCooldowns:
+  - 1
+  - 1
+  cooldowns: []
 --- !u!50 &3626939811046759050
 Rigidbody2D:
   serializedVersion: 4

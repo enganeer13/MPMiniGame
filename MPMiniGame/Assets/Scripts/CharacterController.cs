@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.Events;
 
-public class characterController : MonoBehaviour
+public class CharacterController : MonoBehaviour
 {
 	[SerializeField] private float m_JumpForce = 400f;							// Amount of force added when the player jumps.
 	[Range(0, 1)] [SerializeField] private float m_CrouchSpeed = .36f;			// Amount of maxSpeed applied to crouching movement. 1 = 100%
@@ -18,6 +18,7 @@ public class characterController : MonoBehaviour
 	private Rigidbody2D m_Rigidbody2D;
 	private bool m_FacingRight = true;  // For determining which way the player is currently facing.
 	private Vector3 m_Velocity = Vector3.zero;
+    public int doubleJump;
 
 	[Header("Events")]
 	[Space]
@@ -129,7 +130,17 @@ public class characterController : MonoBehaviour
 			// Add a vertical force to the player.
 			m_Grounded = false;
 			m_Rigidbody2D.AddForce(new Vector2(0f, m_JumpForce));
+            doubleJump--; //subtract 1 jump from player
 		}
+        else if(jump && (doubleJump > 0))
+        {
+            m_Rigidbody2D.AddForce(new Vector2(0f, m_JumpForce));
+            doubleJump--;
+        }
+        if(m_Grounded)
+        {
+            doubleJump = 1;
+        }
 	}
 
 

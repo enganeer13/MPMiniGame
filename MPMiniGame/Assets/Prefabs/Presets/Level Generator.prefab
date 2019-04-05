@@ -44,7 +44,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   presets:
-  - {fileID: 1701700753677203275, guid: 5dff1bf87320a0f4695fd3936bc54335, type: 3}
-  - {fileID: 1738962844692946595, guid: 1c19f7ddfda90a2429dc71a0d86de92f, type: 3}
-  preset_width: 18
+  - {fileID: 1738962844692946595, guid: 4dc3215bfc26d434cab8f367862d5981, type: 3}
+  - {fileID: 1738962844692946595, guid: 74e6bea8434707742ae0f7d13bf74187, type: 3}
+  - {fileID: 1738962844692946595, guid: c0bd9785285d41f48bf5149ea9ad0cda, type: 3}
+  - {fileID: 1738962844692946595, guid: 834e4eddaa1f7324fb786e9aad5154c0, type: 3}
   levelLength: 10

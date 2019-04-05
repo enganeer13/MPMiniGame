@@ -43,4 +43,40 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cd1cdde2dd3d9ca4aa00c07c86183066, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pools: []
+  pools:
+  - tag: Box
+    prefab: {fileID: 2940030034227328971, guid: 4e5c28d154fa51b4e922ba0e52dfa24e,
+      type: 3}
+    size: 10
+  - tag: v-bottleNeck
+    prefab: {fileID: 1738962844692946595, guid: 4dc3215bfc26d434cab8f367862d5981,
+      type: 3}
+    size: 1
+  - tag: burpees
+    prefab: {fileID: 1738962844692946595, guid: 74e6bea8434707742ae0f7d13bf74187,
+      type: 3}
+    size: 1
+  - tag: pitOfDespair
+    prefab: {fileID: 1738962844692946595, guid: c0bd9785285d41f48bf5149ea9ad0cda,
+      type: 3}
+    size: 1
+  - tag: hot-stepTowers
+    prefab: {fileID: 1738962844692946595, guid: 834e4eddaa1f7324fb786e9aad5154c0,
+      type: 3}
+    size: 1
+  - tag: Glue
+    prefab: {fileID: 1050375432710741748, guid: ee79c1647cf4f044f9d010b977f5a037,
+      type: 3}
+    size: 3
+  - tag: GlueDrop
+    prefab: {fileID: 4891710461677162776, guid: 766f6ceff8df3034ebdf95e093e51ece,
+      type: 3}
+    size: 3
+  - tag: BouncyBlade
+    prefab: {fileID: 8585523440785362163, guid: a97f6dc3752589f4e9310e52cb17fdcd,
+      type: 3}
+    size: 15
+  - tag: CannonBall
+    prefab: {fileID: 6710408707775332417, guid: 2f755440c20296a448c866e22a140d48,
+      type: 3}
+    size: 6

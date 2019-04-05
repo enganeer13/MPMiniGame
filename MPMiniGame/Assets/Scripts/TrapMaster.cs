@@ -10,6 +10,9 @@ public class TrapMaster : MonoBehaviour
 
     public List<GameObject> spawnable;
     private int spawnIndex;
+
+    public List<float> maxCooldowns;
+    public float[] cooldowns;
     
     private Rigidbody2D body;
     private Camera cam;
@@ -22,6 +25,9 @@ public class TrapMaster : MonoBehaviour
         cam = FindObjectOfType<Camera>();
 
         spawnIndex = 0;
+
+        Debug.Assert(spawnable.Count == maxCooldowns.Count, "Cooldown list must be same length as spawnable list.");
+        cooldowns = new float[maxCooldowns.Count];
     }
 
     // Update is called once per frame
@@ -38,20 +44,24 @@ public class TrapMaster : MonoBehaviour
         //Clamp x position between camera bounds and add bounce
         if(transform.position.x < leftBound + clampOffset )
         {
-            transform.position = new Vector2(leftBound + clampOffset, 3f);
+            transform.position = new Vector2(leftBound + clampOffset, 4.5f);
             body.velocity = -body.velocity * bounciness;
         }
         if(transform.position.x > rightBound - clampOffset)
         {
-            transform.position = new Vector2(rightBound - clampOffset, 3f);
+            transform.position = new Vector2(rightBound - clampOffset, 4.5f);
             body.velocity = -body.velocity * bounciness;
         }
 
+        //Decrease cooldowns
+        for (int i = 0; i < cooldowns.Length; i++)
+            cooldowns[i] = Mathf.Max(0f, cooldowns[i] - Time.deltaTime);
+
         //Drop Spawnable
-        if(Input.GetButtonDown("Vertical2"))
+        if(Input.GetButtonDown("Vertical2") && cooldowns[spawnIndex] <= 0f)
         {
             GameObject g = ObjectPooler.Instance.SpawnFromPool(spawnable[spawnIndex].name, transform.position, Quaternion.identity);
-            g.GetComponent<Rigidbody2D>().velocity = Vector2.zero;
+            cooldowns[spawnIndex] = maxCooldowns[spawnIndex];
         }
 
         //Cycle Spawnable
@@ -68,10 +78,13 @@ public class TrapMaster : MonoBehaviour
         //Trigger Active trap
         if (Input.GetButtonDown("shift"))
         {
-            RaycastHit2D ray = Physics2D.Raycast(transform.position, Vector2.down);
-            if(ray.collider.GetComponent<Trap>() != null)
+            RaycastHit2D[] rays = Physics2D.BoxCastAll(transform.position, new Vector2(1, 1), 0, Vector2.down);
+            foreach(RaycastHit2D ray in rays)
             {
-                ray.collider.GetComponent<Trap>().activate();
+                if (ray.collider.GetComponent<Trap>() != null)
+                {
+                    ray.collider.GetComponent<Trap>().activate();
+                }
             }
         }
     }

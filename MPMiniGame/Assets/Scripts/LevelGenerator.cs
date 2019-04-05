@@ -5,7 +5,6 @@ using UnityEngine;
 public class LevelGenerator : MonoBehaviour
 {
     public GameObject[] presets;
-    public int levelLength = 10;
 
     private Camera cam;
     private GameObject left;
@@ -26,31 +25,32 @@ public class LevelGenerator : MonoBehaviour
         LevelChunk levelChunk = chunk.GetComponent<LevelChunk>();
         levelChunk.Awake();
         left = ObjectPooler.Instance.SpawnFromPool(levelChunk.name, new Vector3(location, 0, 0), Quaternion.identity);
-        location += left.GetComponent<LevelChunk>().getWidth() / 2;
+        location += left.GetComponent<LevelChunk>().getWidth();
     //get middle chunk
         chunk = GetRandomLevel();
         levelChunk = chunk.GetComponent<LevelChunk>();
         levelChunk.Awake();
-        middle = ObjectPooler.Instance.SpawnFromPool(levelChunk.name, new Vector3(location + chunk.GetComponent<LevelChunk>().getWidth()/2, 0, 0), Quaternion.identity);
+        middle = ObjectPooler.Instance.SpawnFromPool(levelChunk.name, new Vector3(location, 0, 0), Quaternion.identity);
     //get right chunk
-        location = middle.transform.position.x + middle.GetComponent<LevelChunk>().getWidth() / 2;
+        location += middle.GetComponent<LevelChunk>().getWidth();
         chunk = GetRandomLevel();
         levelChunk = chunk.GetComponent<LevelChunk>();
         levelChunk.Awake();
-        right = ObjectPooler.Instance.SpawnFromPool(levelChunk.name, new Vector3(location + chunk.GetComponent<LevelChunk>().getWidth() / 2, 0, 0), Quaternion.identity);
+        right = ObjectPooler.Instance.SpawnFromPool(levelChunk.name, new Vector3(location, 0, 0), Quaternion.identity);
     }
 
     void Update()
     {
+        //if a middle chunk exists and the camera's right bounds exceeds the middle of it, shuffle
         if (middle.name != "")
         {
-            if (cam.ViewportToWorldPoint(new Vector3(1, 0, -10)).x >= middle.transform.position.x - .05f && cam.ViewportToWorldPoint(new Vector3(1, 0, -10)).x <= middle.transform.position.x + .05f)
+            if (cam.ViewportToWorldPoint(new Vector3(1, 0, -10)).x >= middle.transform.position.x + middle.GetComponent<LevelChunk>().getWidth()/2)
             {
                 GameObject chunk = GetRandomLevel();
                 LevelChunk levelChunk = chunk.GetComponent<LevelChunk>();
                 left = middle;
                 temp = right;
-                right = ObjectPooler.Instance.SpawnFromPool(levelChunk.name, right.transform.position + new Vector3(temp.GetComponent<LevelChunk>().getWidth() / 2 + levelChunk.getWidth() / 2, 0, 0), Quaternion.identity);
+                right = ObjectPooler.Instance.SpawnFromPool(levelChunk.name, right.transform.position + new Vector3(temp.GetComponent<LevelChunk>().getWidth(), 0, 0), Quaternion.identity);
                 middle = temp;
             }
         }
