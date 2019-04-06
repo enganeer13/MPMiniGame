@@ -18,11 +18,16 @@ public class TrapMaster : MonoBehaviour
     private Camera cam;
     private float leftBound, rightBound;
 
+    //TrapSelection related variable - Trinidad
+    private TrapSelection trapSelection;
+
     // Start is called before the first frame update
     void Start()
     {
         body = GetComponent<Rigidbody2D>();
         cam = FindObjectOfType<Camera>();
+        //reference script -Trinidad
+        trapSelection = GetComponentInChildren<TrapSelection>();
 
         spawnIndex = 0;
 
@@ -68,11 +73,15 @@ public class TrapMaster : MonoBehaviour
         if(Input.GetButtonDown("SelectorMinus"))
         {
             spawnIndex = (spawnIndex <= 0) ? spawnable.Count - 1 : spawnIndex - 1;
+            //call change from TrapSelection - Trinidad
+            trapSelection.ChangeTrap(spawnable[spawnIndex]);
         }
 
         if (Input.GetButtonDown("SelectorPlus"))
         {
             spawnIndex = (spawnIndex < spawnable.Count - 1) ? spawnIndex + 1 : 0;
+            //call change from TrapSelection -Trinidad
+            trapSelection.ChangeTrap(spawnable[spawnIndex]);
         }
 
         //Trigger Active trap
