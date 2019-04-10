@@ -39,6 +39,12 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+  - name: BackGround
+    uniqueID: 297359709
+    locked: 0
+  - name: BackStage
+    uniqueID: 3553342171
+    locked: 0
   - name: Default
     uniqueID: 0
     locked: 0

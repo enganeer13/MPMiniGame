@@ -658,11 +658,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5950667627925182031}
     m_Modifications:
-    - target: {fileID: 4464186432535241897, guid: 0faa4f153490fbf4d9a776ff790b8acf,
-        type: 3}
-      propertyPath: m_Name
-      value: Cannon (2)
-      objectReference: {fileID: 0}
     - target: {fileID: 4464186432535241902, guid: 0faa4f153490fbf4d9a776ff790b8acf,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -723,6 +718,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4464186432535241897, guid: 0faa4f153490fbf4d9a776ff790b8acf,
+        type: 3}
+      propertyPath: m_Name
+      value: Cannon (2)
+      objectReference: {fileID: 0}
     - target: {fileID: 4464186432535241896, guid: 0faa4f153490fbf4d9a776ff790b8acf,
         type: 3}
       propertyPath: force
@@ -758,11 +758,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5950667627925182031}
     m_Modifications:
-    - target: {fileID: 4464186432535241897, guid: 0faa4f153490fbf4d9a776ff790b8acf,
-        type: 3}
-      propertyPath: m_Name
-      value: Cannon
-      objectReference: {fileID: 0}
     - target: {fileID: 4464186432535241902, guid: 0faa4f153490fbf4d9a776ff790b8acf,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -823,6 +818,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4464186432535241897, guid: 0faa4f153490fbf4d9a776ff790b8acf,
+        type: 3}
+      propertyPath: m_Name
+      value: Cannon
+      objectReference: {fileID: 0}
     - target: {fileID: 4464186432535241896, guid: 0faa4f153490fbf4d9a776ff790b8acf,
         type: 3}
       propertyPath: force
@@ -848,11 +848,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5950667627925182031}
     m_Modifications:
-    - target: {fileID: 4464186432535241897, guid: 0faa4f153490fbf4d9a776ff790b8acf,
-        type: 3}
-      propertyPath: m_Name
-      value: Cannon (1)
-      objectReference: {fileID: 0}
     - target: {fileID: 4464186432535241902, guid: 0faa4f153490fbf4d9a776ff790b8acf,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -912,6 +907,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4464186432535241897, guid: 0faa4f153490fbf4d9a776ff790b8acf,
+        type: 3}
+      propertyPath: m_Name
+      value: Cannon (1)
       objectReference: {fileID: 0}
     - target: {fileID: 4464186432535241896, guid: 0faa4f153490fbf4d9a776ff790b8acf,
         type: 3}

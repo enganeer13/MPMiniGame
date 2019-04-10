@@ -11,6 +11,6 @@ public class CannonBall : DeathBox
         if (collision.gameObject.GetComponent<playerMovement>() && canKill)
             die();
         else
-            canKill = false;
+            gameObject.SetActive(false);
     }
 }
