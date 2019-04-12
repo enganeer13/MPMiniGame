@@ -34,22 +34,25 @@ public class Turbine : AutoTrap, Trap
     {
         active = false;
         windBox.enabled = false;
-        particles.enableEmission = false;
+        particles.Play();
     }
 
     void fanOn()
     {
         active = true;
         windBox.enabled = true;
-        particles.enableEmission = true;
+        particles.Stop();
     }
 
     void toggleFan()
     {
         //activate wind hitbox
         windBox.enabled = windBox.enabled ? false : true;
-        particles.enableEmission = particles.enableEmission ? false : true;
         active = active ? false : true;
+        if (active)
+            particles.Play();
+        else
+            particles.Stop();
     }
 
     public override void activateOnce()
