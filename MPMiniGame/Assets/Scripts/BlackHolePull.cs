@@ -14,7 +14,6 @@ public class BlackHolePull : MonoBehaviour
         direction.Normalize();
         float mod = 1 - Vector3.Distance(collision.transform.position, transform.position)/hitbox.radius;
         mod = mod < 0 ? .25f : mod;
-        Debug.Log(mod);
         collision.attachedRigidbody.AddForce(force * mod * direction);
     }
 }
