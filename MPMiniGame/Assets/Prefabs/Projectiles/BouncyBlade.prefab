@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 8585523440785362162}
   - component: {fileID: 927200125378224876}
   - component: {fileID: 6146172345682630751}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: BouncyBlade
   m_TagString: Untagged
   m_Icon: {fileID: 0}
