@@ -31,7 +31,7 @@ public class Spikes : AutoTrap
     }
     void readySpikes()
     {
-        spikes.transform.position = transform.position - defaultRelative + direction * .3f;
+        spikes.transform.position = transform.position - defaultRelative + direction * .15f;
     }
     
     //activate trap
@@ -64,14 +64,14 @@ public class Spikes : AutoTrap
 
     public override void activateOnce()
     {
-        if (!automatic)
+        if (!automatic && !active)
         {
             readySpikes();
             Invoke("triggerSpikes", cooldownOffset);
             Invoke("retractSpikes", cooldownOffset * 2);
             timer = Time.time + cooldownOffset;
         }
-        else
+        else if (automatic)
         {
             toggleSpikes();
         }

@@ -186,78 +186,6 @@ Tilemap:
       m_ObjectToInstantiate: {fileID: 0}
       m_TileFlags: 1
       m_ColliderType: 1
-  - first: {x: 8, y: -6, z: 0}
-    second:
-      m_TileIndex: 1
-      m_TileSpriteIndex: 1
-      m_TileMatrixIndex: 0
-      m_TileColorIndex: 0
-      m_ObjectToInstantiate: {fileID: 0}
-      m_TileFlags: 1
-      m_ColliderType: 1
-  - first: {x: 9, y: -6, z: 0}
-    second:
-      m_TileIndex: 1
-      m_TileSpriteIndex: 1
-      m_TileMatrixIndex: 0
-      m_TileColorIndex: 0
-      m_ObjectToInstantiate: {fileID: 0}
-      m_TileFlags: 1
-      m_ColliderType: 1
-  - first: {x: 10, y: -6, z: 0}
-    second:
-      m_TileIndex: 1
-      m_TileSpriteIndex: 1
-      m_TileMatrixIndex: 0
-      m_TileColorIndex: 0
-      m_ObjectToInstantiate: {fileID: 0}
-      m_TileFlags: 1
-      m_ColliderType: 1
-  - first: {x: 11, y: -6, z: 0}
-    second:
-      m_TileIndex: 1
-      m_TileSpriteIndex: 1
-      m_TileMatrixIndex: 0
-      m_TileColorIndex: 0
-      m_ObjectToInstantiate: {fileID: 0}
-      m_TileFlags: 1
-      m_ColliderType: 1
-  - first: {x: 12, y: -6, z: 0}
-    second:
-      m_TileIndex: 1
-      m_TileSpriteIndex: 1
-      m_TileMatrixIndex: 0
-      m_TileColorIndex: 0
-      m_ObjectToInstantiate: {fileID: 0}
-      m_TileFlags: 1
-      m_ColliderType: 1
-  - first: {x: 13, y: -6, z: 0}
-    second:
-      m_TileIndex: 1
-      m_TileSpriteIndex: 1
-      m_TileMatrixIndex: 0
-      m_TileColorIndex: 0
-      m_ObjectToInstantiate: {fileID: 0}
-      m_TileFlags: 1
-      m_ColliderType: 1
-  - first: {x: 14, y: -6, z: 0}
-    second:
-      m_TileIndex: 1
-      m_TileSpriteIndex: 1
-      m_TileMatrixIndex: 0
-      m_TileColorIndex: 0
-      m_ObjectToInstantiate: {fileID: 0}
-      m_TileFlags: 1
-      m_ColliderType: 1
-  - first: {x: 15, y: -6, z: 0}
-    second:
-      m_TileIndex: 1
-      m_TileSpriteIndex: 1
-      m_TileMatrixIndex: 0
-      m_TileColorIndex: 0
-      m_ObjectToInstantiate: {fileID: 0}
-      m_TileFlags: 1
-      m_ColliderType: 1
   - first: {x: 16, y: -6, z: 0}
     second:
       m_TileIndex: 0
@@ -384,42 +312,6 @@ Tilemap:
       m_ObjectToInstantiate: {fileID: 0}
       m_TileFlags: 1
       m_ColliderType: 1
-  - first: {x: 6, y: -4, z: 0}
-    second:
-      m_TileIndex: 1
-      m_TileSpriteIndex: 1
-      m_TileMatrixIndex: 0
-      m_TileColorIndex: 0
-      m_ObjectToInstantiate: {fileID: 0}
-      m_TileFlags: 1
-      m_ColliderType: 1
-  - first: {x: 7, y: -4, z: 0}
-    second:
-      m_TileIndex: 1
-      m_TileSpriteIndex: 1
-      m_TileMatrixIndex: 0
-      m_TileColorIndex: 0
-      m_ObjectToInstantiate: {fileID: 0}
-      m_TileFlags: 1
-      m_ColliderType: 1
-  - first: {x: 16, y: -4, z: 0}
-    second:
-      m_TileIndex: 1
-      m_TileSpriteIndex: 1
-      m_TileMatrixIndex: 0
-      m_TileColorIndex: 0
-      m_ObjectToInstantiate: {fileID: 0}
-      m_TileFlags: 1
-      m_ColliderType: 1
-  - first: {x: 17, y: -4, z: 0}
-    second:
-      m_TileIndex: 1
-      m_TileSpriteIndex: 1
-      m_TileMatrixIndex: 0
-      m_TileColorIndex: 0
-      m_ObjectToInstantiate: {fileID: 0}
-      m_TileFlags: 1
-      m_ColliderType: 1
   - first: {x: 18, y: -4, z: 0}
     second:
       m_TileIndex: 3
@@ -469,7 +361,7 @@ Tilemap:
   m_TileAssetArray:
   - m_RefCount: 7
     m_Data: {fileID: 11400000, guid: c66bd3ba36b24824492cb23a4e124deb, type: 2}
-  - m_RefCount: 23
+  - m_RefCount: 11
     m_Data: {fileID: 11400000, guid: 21d91504ac3106343be6147f132ccee5, type: 2}
   - m_RefCount: 4
     m_Data: {fileID: 11400000, guid: 828b2e0521a03434fbf178afde541989, type: 2}
@@ -480,7 +372,7 @@ Tilemap:
   m_TileSpriteArray:
   - m_RefCount: 7
     m_Data: {fileID: 21300000, guid: 88fa3531692b74cd0b6b60f2d94ad366, type: 3}
-  - m_RefCount: 23
+  - m_RefCount: 11
     m_Data: {fileID: 21300000, guid: 39a5c7e45a71744138474718f7580bca, type: 3}
   - m_RefCount: 4
     m_Data: {fileID: 21300000, guid: 8dfa5f3f329fe428f82d346c462d90aa, type: 3}
@@ -489,7 +381,7 @@ Tilemap:
   - m_RefCount: 1
     m_Data: {fileID: 21300000, guid: 4028c2ebc026e4c80a942800ca6e478e, type: 3}
   m_TileMatrixArray:
-  - m_RefCount: 39
+  - m_RefCount: 27
     m_Data:
       e00: 1
       e01: 0
@@ -508,7 +400,7 @@ Tilemap:
       e32: 0
       e33: 1
   m_TileColorArray:
-  - m_RefCount: 39
+  - m_RefCount: 27
     m_Data: {r: 1, g: 1, b: 1, a: 1}
   m_AnimationFrameRate: 1
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -659,11 +551,22 @@ PrefabInstance:
       propertyPath: m_Name
       value: SpikeTrap (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 3350772138399419123, guid: b94bc3d7483a71a4a9131542defe83e6,
+        type: 3}
+      propertyPath: spikes
+      value: 
+      objectReference: {fileID: 7387944700328833816}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b94bc3d7483a71a4a9131542defe83e6, type: 3}
 --- !u!4 &7387944699102326985 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7446639912121273053, guid: b94bc3d7483a71a4a9131542defe83e6,
+    type: 3}
+  m_PrefabInstance: {fileID: 130752842020780564}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &7387944700328833816 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7446639910931466508, guid: b94bc3d7483a71a4a9131542defe83e6,
     type: 3}
   m_PrefabInstance: {fileID: 130752842020780564}
   m_PrefabAsset: {fileID: 0}
@@ -734,11 +637,22 @@ PrefabInstance:
       propertyPath: m_Name
       value: SpikeTrap (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 3350772138399419123, guid: b94bc3d7483a71a4a9131542defe83e6,
+        type: 3}
+      propertyPath: spikes
+      value: 
+      objectReference: {fileID: 7319060138625007613}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b94bc3d7483a71a4a9131542defe83e6, type: 3}
 --- !u!4 &7319060139843779628 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7446639912121273053, guid: b94bc3d7483a71a4a9131542defe83e6,
+    type: 3}
+  m_PrefabInstance: {fileID: 199638190983214833}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &7319060138625007613 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7446639910931466508, guid: b94bc3d7483a71a4a9131542defe83e6,
     type: 3}
   m_PrefabInstance: {fileID: 199638190983214833}
   m_PrefabAsset: {fileID: 0}
@@ -809,11 +723,22 @@ PrefabInstance:
       propertyPath: m_Name
       value: SpikeTrap (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 3350772138399419123, guid: b94bc3d7483a71a4a9131542defe83e6,
+        type: 3}
+      propertyPath: spikes
+      value: 
+      objectReference: {fileID: 7216452571240609539}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b94bc3d7483a71a4a9131542defe83e6, type: 3}
 --- !u!4 &7216452572162110674 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7446639912121273053, guid: b94bc3d7483a71a4a9131542defe83e6,
+    type: 3}
+  m_PrefabInstance: {fileID: 248325708471942671}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &7216452571240609539 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7446639910931466508, guid: b94bc3d7483a71a4a9131542defe83e6,
     type: 3}
   m_PrefabInstance: {fileID: 248325708471942671}
   m_PrefabAsset: {fileID: 0}
@@ -884,8 +809,19 @@ PrefabInstance:
       propertyPath: m_Name
       value: SpikeTrap (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 3350772138399419123, guid: b94bc3d7483a71a4a9131542defe83e6,
+        type: 3}
+      propertyPath: spikes
+      value: 
+      objectReference: {fileID: 6978721705292912030}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b94bc3d7483a71a4a9131542defe83e6, type: 3}
+--- !u!1 &6978721705292912030 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7446639910931466508, guid: b94bc3d7483a71a4a9131542defe83e6,
+    type: 3}
+  m_PrefabInstance: {fileID: 544550592750279826}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &6978721706515355215 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7446639912121273053, guid: b94bc3d7483a71a4a9131542defe83e6,
@@ -899,6 +835,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5950667627925182031}
     m_Modifications:
+    - target: {fileID: 4464186432535241897, guid: 0faa4f153490fbf4d9a776ff790b8acf,
+        type: 3}
+      propertyPath: m_Name
+      value: Cannon
+      objectReference: {fileID: 0}
     - target: {fileID: 4464186432535241902, guid: 0faa4f153490fbf4d9a776ff790b8acf,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -954,15 +895,15 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 228
       objectReference: {fileID: 0}
-    - target: {fileID: 4464186432535241897, guid: 0faa4f153490fbf4d9a776ff790b8acf,
-        type: 3}
-      propertyPath: m_Name
-      value: Cannon
-      objectReference: {fileID: 0}
     - target: {fileID: 4464186432535241896, guid: 0faa4f153490fbf4d9a776ff790b8acf,
         type: 3}
       propertyPath: force
       value: 0.05
+      objectReference: {fileID: 0}
+    - target: {fileID: 4464186432535241896, guid: 0faa4f153490fbf4d9a776ff790b8acf,
+        type: 3}
+      propertyPath: cooldownOffset
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4464186432535241896, guid: 0faa4f153490fbf4d9a776ff790b8acf,
         type: 3}
@@ -1044,8 +985,19 @@ PrefabInstance:
       propertyPath: m_Name
       value: SpikeTrap (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 3350772138399419123, guid: b94bc3d7483a71a4a9131542defe83e6,
+        type: 3}
+      propertyPath: spikes
+      value: 
+      objectReference: {fileID: 8514266502933591102}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b94bc3d7483a71a4a9131542defe83e6, type: 3}
+--- !u!1 &8514266502933591102 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7446639910931466508, guid: b94bc3d7483a71a4a9131542defe83e6,
+    type: 3}
+  m_PrefabInstance: {fileID: 1260735000337988914}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &8514266503886944239 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7446639912121273053, guid: b94bc3d7483a71a4a9131542defe83e6,
@@ -1059,6 +1011,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5950667627925182031}
     m_Modifications:
+    - target: {fileID: 4464186432535241897, guid: 0faa4f153490fbf4d9a776ff790b8acf,
+        type: 3}
+      propertyPath: m_Name
+      value: Cannon (1)
+      objectReference: {fileID: 0}
     - target: {fileID: 4464186432535241902, guid: 0faa4f153490fbf4d9a776ff790b8acf,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1114,15 +1071,15 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 318
       objectReference: {fileID: 0}
-    - target: {fileID: 4464186432535241897, guid: 0faa4f153490fbf4d9a776ff790b8acf,
-        type: 3}
-      propertyPath: m_Name
-      value: Cannon (1)
-      objectReference: {fileID: 0}
     - target: {fileID: 4464186432535241896, guid: 0faa4f153490fbf4d9a776ff790b8acf,
         type: 3}
       propertyPath: force
       value: 0.05
+      objectReference: {fileID: 0}
+    - target: {fileID: 4464186432535241896, guid: 0faa4f153490fbf4d9a776ff790b8acf,
+        type: 3}
+      propertyPath: cooldownOffset
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4464186432535241896, guid: 0faa4f153490fbf4d9a776ff790b8acf,
         type: 3}
@@ -1204,11 +1161,22 @@ PrefabInstance:
       propertyPath: m_Name
       value: SpikeTrap (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 3350772138399419123, guid: b94bc3d7483a71a4a9131542defe83e6,
+        type: 3}
+      propertyPath: spikes
+      value: 
+      objectReference: {fileID: 6751703262686985006}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b94bc3d7483a71a4a9131542defe83e6, type: 3}
 --- !u!4 &6751703261459298559 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7446639912121273053, guid: b94bc3d7483a71a4a9131542defe83e6,
+    type: 3}
+  m_PrefabInstance: {fileID: 4243826621856657954}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &6751703262686985006 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7446639910931466508, guid: b94bc3d7483a71a4a9131542defe83e6,
     type: 3}
   m_PrefabInstance: {fileID: 4243826621856657954}
   m_PrefabAsset: {fileID: 0}
@@ -1279,8 +1247,19 @@ PrefabInstance:
       propertyPath: m_Name
       value: SpikeTrap
       objectReference: {fileID: 0}
+    - target: {fileID: 3350772138399419123, guid: b94bc3d7483a71a4a9131542defe83e6,
+        type: 3}
+      propertyPath: spikes
+      value: 
+      objectReference: {fileID: 4292059440918835488}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b94bc3d7483a71a4a9131542defe83e6, type: 3}
+--- !u!1 &4292059440918835488 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7446639910931466508, guid: b94bc3d7483a71a4a9131542defe83e6,
+    type: 3}
+  m_PrefabInstance: {fileID: 6685508820145616940}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &4292059441873367793 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7446639912121273053, guid: b94bc3d7483a71a4a9131542defe83e6,
@@ -1354,11 +1333,22 @@ PrefabInstance:
       propertyPath: m_Name
       value: SpikeTrap (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 3350772138399419123, guid: b94bc3d7483a71a4a9131542defe83e6,
+        type: 3}
+      propertyPath: spikes
+      value: 
+      objectReference: {fileID: 953162056333497698}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b94bc3d7483a71a4a9131542defe83e6, type: 3}
 --- !u!4 &953162057527498419 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7446639912121273053, guid: b94bc3d7483a71a4a9131542defe83e6,
+    type: 3}
+  m_PrefabInstance: {fileID: 7668935671623621742}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &953162056333497698 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7446639910931466508, guid: b94bc3d7483a71a4a9131542defe83e6,
     type: 3}
   m_PrefabInstance: {fileID: 7668935671623621742}
   m_PrefabAsset: {fileID: 0}
@@ -1429,8 +1419,19 @@ PrefabInstance:
       propertyPath: m_Name
       value: SpikeTrap (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 3350772138399419123, guid: b94bc3d7483a71a4a9131542defe83e6,
+        type: 3}
+      propertyPath: spikes
+      value: 
+      objectReference: {fileID: 1457204200063461435}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b94bc3d7483a71a4a9131542defe83e6, type: 3}
+--- !u!1 &1457204200063461435 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7446639910931466508, guid: b94bc3d7483a71a4a9131542defe83e6,
+    type: 3}
+  m_PrefabInstance: {fileID: 8317797717357912375}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1457204199100017642 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7446639912121273053, guid: b94bc3d7483a71a4a9131542defe83e6,
@@ -1504,11 +1505,22 @@ PrefabInstance:
       propertyPath: m_Name
       value: SpikeTrap (9)
       objectReference: {fileID: 0}
+    - target: {fileID: 3350772138399419123, guid: b94bc3d7483a71a4a9131542defe83e6,
+        type: 3}
+      propertyPath: spikes
+      value: 
+      objectReference: {fileID: 1494691201101312861}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b94bc3d7483a71a4a9131542defe83e6, type: 3}
 --- !u!4 &1494691199916093580 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7446639912121273053, guid: b94bc3d7483a71a4a9131542defe83e6,
+    type: 3}
+  m_PrefabInstance: {fileID: 8352473280226703953}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1494691201101312861 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7446639910931466508, guid: b94bc3d7483a71a4a9131542defe83e6,
     type: 3}
   m_PrefabInstance: {fileID: 8352473280226703953}
   m_PrefabAsset: {fileID: 0}
@@ -1579,11 +1591,22 @@ PrefabInstance:
       propertyPath: m_Name
       value: SpikeTrap (11)
       objectReference: {fileID: 0}
+    - target: {fileID: 3350772138399419123, guid: b94bc3d7483a71a4a9131542defe83e6,
+        type: 3}
+      propertyPath: spikes
+      value: 
+      objectReference: {fileID: 2181562147727103975}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b94bc3d7483a71a4a9131542defe83e6, type: 3}
 --- !u!4 &2181562148954264630 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7446639912121273053, guid: b94bc3d7483a71a4a9131542defe83e6,
+    type: 3}
+  m_PrefabInstance: {fileID: 8723948276906680043}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &2181562147727103975 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7446639910931466508, guid: b94bc3d7483a71a4a9131542defe83e6,
     type: 3}
   m_PrefabInstance: {fileID: 8723948276906680043}
   m_PrefabAsset: {fileID: 0}
@@ -1654,11 +1677,22 @@ PrefabInstance:
       propertyPath: m_Name
       value: SpikeTrap (10)
       objectReference: {fileID: 0}
+    - target: {fileID: 3350772138399419123, guid: b94bc3d7483a71a4a9131542defe83e6,
+        type: 3}
+      propertyPath: spikes
+      value: 
+      objectReference: {fileID: 2183401805798864336}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b94bc3d7483a71a4a9131542defe83e6, type: 3}
 --- !u!4 &2183401804614301185 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7446639912121273053, guid: b94bc3d7483a71a4a9131542defe83e6,
+    type: 3}
+  m_PrefabInstance: {fileID: 8726506942568561884}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &2183401805798864336 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7446639910931466508, guid: b94bc3d7483a71a4a9131542defe83e6,
     type: 3}
   m_PrefabInstance: {fileID: 8726506942568561884}
   m_PrefabAsset: {fileID: 0}

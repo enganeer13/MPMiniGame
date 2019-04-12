@@ -99,7 +99,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0, y: -0.15}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -272,6 +272,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   automatic: 0
-  cooldownOffset: 0
+  cooldownOffset: 0.4
   active: 0
   spikes: {fileID: 7446639910931466508}
