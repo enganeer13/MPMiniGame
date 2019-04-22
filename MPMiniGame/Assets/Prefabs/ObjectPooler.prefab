@@ -80,3 +80,7 @@ MonoBehaviour:
     prefab: {fileID: 6710408707775332417, guid: 2f755440c20296a448c866e22a140d48,
       type: 3}
     size: 6
+  - tag: decisions
+    prefab: {fileID: 1738962844692946595, guid: 2d5cc35761cb9c84d83f4b0b475249de,
+      type: 3}
+    size: 1

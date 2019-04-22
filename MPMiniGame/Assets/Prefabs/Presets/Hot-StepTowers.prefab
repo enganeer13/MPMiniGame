@@ -897,18 +897,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4464186432535241896, guid: 0faa4f153490fbf4d9a776ff790b8acf,
         type: 3}
-      propertyPath: tag
-      value: CannonBall
-      objectReference: {fileID: 0}
-    - target: {fileID: 4464186432535241896, guid: 0faa4f153490fbf4d9a776ff790b8acf,
-        type: 3}
       propertyPath: force
-      value: 7500
+      value: 10000
       objectReference: {fileID: 0}
     - target: {fileID: 4464186432535241896, guid: 0faa4f153490fbf4d9a776ff790b8acf,
         type: 3}
       propertyPath: cooldownOffset
       value: 0.75
+      objectReference: {fileID: 0}
+    - target: {fileID: 4464186432535241896, guid: 0faa4f153490fbf4d9a776ff790b8acf,
+        type: 3}
+      propertyPath: tag
+      value: CannonBall
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0faa4f153490fbf4d9a776ff790b8acf, type: 3}
@@ -987,18 +987,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4464186432535241896, guid: 0faa4f153490fbf4d9a776ff790b8acf,
         type: 3}
-      propertyPath: tag
-      value: CannonBall
-      objectReference: {fileID: 0}
-    - target: {fileID: 4464186432535241896, guid: 0faa4f153490fbf4d9a776ff790b8acf,
-        type: 3}
       propertyPath: force
-      value: 7500
+      value: 10000
       objectReference: {fileID: 0}
     - target: {fileID: 4464186432535241896, guid: 0faa4f153490fbf4d9a776ff790b8acf,
         type: 3}
       propertyPath: cooldownOffset
       value: 0.75
+      objectReference: {fileID: 0}
+    - target: {fileID: 4464186432535241896, guid: 0faa4f153490fbf4d9a776ff790b8acf,
+        type: 3}
+      propertyPath: tag
+      value: CannonBall
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0faa4f153490fbf4d9a776ff790b8acf, type: 3}
@@ -1015,11 +1015,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5950667627925182031}
     m_Modifications:
-    - target: {fileID: 7446639912121273048, guid: b94bc3d7483a71a4a9131542defe83e6,
-        type: 3}
-      propertyPath: m_Name
-      value: SpikeTrap (7)
-      objectReference: {fileID: 0}
     - target: {fileID: 7446639912121273053, guid: b94bc3d7483a71a4a9131542defe83e6,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1075,13 +1070,29 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 90
       objectReference: {fileID: 0}
-    - target: {fileID: 7446639912121273049, guid: b94bc3d7483a71a4a9131542defe83e6,
+    - target: {fileID: 7446639912121273048, guid: b94bc3d7483a71a4a9131542defe83e6,
+        type: 3}
+      propertyPath: m_Name
+      value: SpikeTrap (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3350772138399419123, guid: b94bc3d7483a71a4a9131542defe83e6,
         type: 3}
       propertyPath: active
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 3350772138399419123, guid: b94bc3d7483a71a4a9131542defe83e6,
+        type: 3}
+      propertyPath: spikes
+      value: 
+      objectReference: {fileID: 5239569383646955982}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b94bc3d7483a71a4a9131542defe83e6, type: 3}
+--- !u!1 &5239569383646955982 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7446639910931466508, guid: b94bc3d7483a71a4a9131542defe83e6,
+    type: 3}
+  m_PrefabInstance: {fileID: 3450169715532169410}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &5239569384869399071 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7446639912121273053, guid: b94bc3d7483a71a4a9131542defe83e6,
@@ -1095,11 +1106,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5950667627925182031}
     m_Modifications:
-    - target: {fileID: 7446639912121273048, guid: b94bc3d7483a71a4a9131542defe83e6,
-        type: 3}
-      propertyPath: m_Name
-      value: SpikeTrap (2)
-      objectReference: {fileID: 0}
     - target: {fileID: 7446639912121273053, guid: b94bc3d7483a71a4a9131542defe83e6,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1155,16 +1161,32 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 90
       objectReference: {fileID: 0}
-    - target: {fileID: 7446639912121273049, guid: b94bc3d7483a71a4a9131542defe83e6,
+    - target: {fileID: 7446639912121273048, guid: b94bc3d7483a71a4a9131542defe83e6,
+        type: 3}
+      propertyPath: m_Name
+      value: SpikeTrap (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3350772138399419123, guid: b94bc3d7483a71a4a9131542defe83e6,
         type: 3}
       propertyPath: active
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 3350772138399419123, guid: b94bc3d7483a71a4a9131542defe83e6,
+        type: 3}
+      propertyPath: spikes
+      value: 
+      objectReference: {fileID: 6807894207898995237}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b94bc3d7483a71a4a9131542defe83e6, type: 3}
 --- !u!4 &6807894206706567668 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7446639912121273053, guid: b94bc3d7483a71a4a9131542defe83e6,
+    type: 3}
+  m_PrefabInstance: {fileID: 4120151809988969257}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &6807894207898995237 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7446639910931466508, guid: b94bc3d7483a71a4a9131542defe83e6,
     type: 3}
   m_PrefabInstance: {fileID: 4120151809988969257}
   m_PrefabAsset: {fileID: 0}
@@ -1237,18 +1259,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4464186432535241896, guid: 0faa4f153490fbf4d9a776ff790b8acf,
         type: 3}
-      propertyPath: tag
-      value: CannonBall
-      objectReference: {fileID: 0}
-    - target: {fileID: 4464186432535241896, guid: 0faa4f153490fbf4d9a776ff790b8acf,
-        type: 3}
       propertyPath: force
-      value: 7500
+      value: 10000
       objectReference: {fileID: 0}
     - target: {fileID: 4464186432535241896, guid: 0faa4f153490fbf4d9a776ff790b8acf,
         type: 3}
       propertyPath: cooldownOffset
       value: 0.75
+      objectReference: {fileID: 0}
+    - target: {fileID: 4464186432535241896, guid: 0faa4f153490fbf4d9a776ff790b8acf,
+        type: 3}
+      propertyPath: tag
+      value: CannonBall
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0faa4f153490fbf4d9a776ff790b8acf, type: 3}
@@ -1265,11 +1287,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5950667627925182031}
     m_Modifications:
-    - target: {fileID: 7446639912121273048, guid: b94bc3d7483a71a4a9131542defe83e6,
-        type: 3}
-      propertyPath: m_Name
-      value: SpikeTrap (3)
-      objectReference: {fileID: 0}
     - target: {fileID: 7446639912121273053, guid: b94bc3d7483a71a4a9131542defe83e6,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1325,13 +1342,29 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 90
       objectReference: {fileID: 0}
-    - target: {fileID: 7446639912121273049, guid: b94bc3d7483a71a4a9131542defe83e6,
+    - target: {fileID: 7446639912121273048, guid: b94bc3d7483a71a4a9131542defe83e6,
+        type: 3}
+      propertyPath: m_Name
+      value: SpikeTrap (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3350772138399419123, guid: b94bc3d7483a71a4a9131542defe83e6,
         type: 3}
       propertyPath: active
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 3350772138399419123, guid: b94bc3d7483a71a4a9131542defe83e6,
+        type: 3}
+      propertyPath: spikes
+      value: 
+      objectReference: {fileID: 3025045038100950497}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b94bc3d7483a71a4a9131542defe83e6, type: 3}
+--- !u!1 &3025045038100950497 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7446639910931466508, guid: b94bc3d7483a71a4a9131542defe83e6,
+    type: 3}
+  m_PrefabInstance: {fileID: 5669145607596516589}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &3025045036883357232 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7446639912121273053, guid: b94bc3d7483a71a4a9131542defe83e6,
@@ -1345,11 +1378,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5950667627925182031}
     m_Modifications:
-    - target: {fileID: 7446639912121273048, guid: b94bc3d7483a71a4a9131542defe83e6,
-        type: 3}
-      propertyPath: m_Name
-      value: SpikeTrap (8)
-      objectReference: {fileID: 0}
     - target: {fileID: 7446639912121273053, guid: b94bc3d7483a71a4a9131542defe83e6,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1405,16 +1433,32 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 90
       objectReference: {fileID: 0}
-    - target: {fileID: 7446639912121273049, guid: b94bc3d7483a71a4a9131542defe83e6,
+    - target: {fileID: 7446639912121273048, guid: b94bc3d7483a71a4a9131542defe83e6,
+        type: 3}
+      propertyPath: m_Name
+      value: SpikeTrap (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3350772138399419123, guid: b94bc3d7483a71a4a9131542defe83e6,
         type: 3}
       propertyPath: active
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 3350772138399419123, guid: b94bc3d7483a71a4a9131542defe83e6,
+        type: 3}
+      propertyPath: spikes
+      value: 
+      objectReference: {fileID: 3717023084129456283}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b94bc3d7483a71a4a9131542defe83e6, type: 3}
 --- !u!4 &3717023085314675530 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7446639912121273053, guid: b94bc3d7483a71a4a9131542defe83e6,
+    type: 3}
+  m_PrefabInstance: {fileID: 6107518015315089815}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &3717023084129456283 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7446639910931466508, guid: b94bc3d7483a71a4a9131542defe83e6,
     type: 3}
   m_PrefabInstance: {fileID: 6107518015315089815}
   m_PrefabAsset: {fileID: 0}
@@ -1425,11 +1469,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5950667627925182031}
     m_Modifications:
-    - target: {fileID: 7446639912121273048, guid: b94bc3d7483a71a4a9131542defe83e6,
-        type: 3}
-      propertyPath: m_Name
-      value: SpikeTrap (6)
-      objectReference: {fileID: 0}
     - target: {fileID: 7446639912121273053, guid: b94bc3d7483a71a4a9131542defe83e6,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1485,16 +1524,32 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 90
       objectReference: {fileID: 0}
-    - target: {fileID: 7446639912121273049, guid: b94bc3d7483a71a4a9131542defe83e6,
+    - target: {fileID: 7446639912121273048, guid: b94bc3d7483a71a4a9131542defe83e6,
+        type: 3}
+      propertyPath: m_Name
+      value: SpikeTrap (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3350772138399419123, guid: b94bc3d7483a71a4a9131542defe83e6,
         type: 3}
       propertyPath: active
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 3350772138399419123, guid: b94bc3d7483a71a4a9131542defe83e6,
+        type: 3}
+      propertyPath: spikes
+      value: 
+      objectReference: {fileID: 4577063381082479238}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b94bc3d7483a71a4a9131542defe83e6, type: 3}
 --- !u!4 &4577063382002407767 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7446639912121273053, guid: b94bc3d7483a71a4a9131542defe83e6,
+    type: 3}
+  m_PrefabInstance: {fileID: 6400522642357457802}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &4577063381082479238 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7446639910931466508, guid: b94bc3d7483a71a4a9131542defe83e6,
     type: 3}
   m_PrefabInstance: {fileID: 6400522642357457802}
   m_PrefabAsset: {fileID: 0}
@@ -1505,11 +1560,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5950667627925182031}
     m_Modifications:
-    - target: {fileID: 7446639912121273048, guid: b94bc3d7483a71a4a9131542defe83e6,
-        type: 3}
-      propertyPath: m_Name
-      value: SpikeTrap (4)
-      objectReference: {fileID: 0}
     - target: {fileID: 7446639912121273053, guid: b94bc3d7483a71a4a9131542defe83e6,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1565,13 +1615,29 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 90
       objectReference: {fileID: 0}
-    - target: {fileID: 7446639912121273049, guid: b94bc3d7483a71a4a9131542defe83e6,
+    - target: {fileID: 7446639912121273048, guid: b94bc3d7483a71a4a9131542defe83e6,
+        type: 3}
+      propertyPath: m_Name
+      value: SpikeTrap (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3350772138399419123, guid: b94bc3d7483a71a4a9131542defe83e6,
         type: 3}
       propertyPath: active
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 3350772138399419123, guid: b94bc3d7483a71a4a9131542defe83e6,
+        type: 3}
+      propertyPath: spikes
+      value: 
+      objectReference: {fileID: 4522855303035601885}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b94bc3d7483a71a4a9131542defe83e6, type: 3}
+--- !u!1 &4522855303035601885 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7446639910931466508, guid: b94bc3d7483a71a4a9131542defe83e6,
+    type: 3}
+  m_PrefabInstance: {fileID: 6454695538720557777}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &4522855301803720716 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7446639912121273053, guid: b94bc3d7483a71a4a9131542defe83e6,
@@ -1585,11 +1651,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5950667627925182031}
     m_Modifications:
-    - target: {fileID: 7446639912121273048, guid: b94bc3d7483a71a4a9131542defe83e6,
-        type: 3}
-      propertyPath: m_Name
-      value: SpikeTrap (1)
-      objectReference: {fileID: 0}
     - target: {fileID: 7446639912121273053, guid: b94bc3d7483a71a4a9131542defe83e6,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1645,13 +1706,29 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 90
       objectReference: {fileID: 0}
-    - target: {fileID: 7446639912121273049, guid: b94bc3d7483a71a4a9131542defe83e6,
+    - target: {fileID: 7446639912121273048, guid: b94bc3d7483a71a4a9131542defe83e6,
+        type: 3}
+      propertyPath: m_Name
+      value: SpikeTrap (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3350772138399419123, guid: b94bc3d7483a71a4a9131542defe83e6,
         type: 3}
       propertyPath: active
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 3350772138399419123, guid: b94bc3d7483a71a4a9131542defe83e6,
+        type: 3}
+      propertyPath: spikes
+      value: 
+      objectReference: {fileID: 915191765348291474}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b94bc3d7483a71a4a9131542defe83e6, type: 3}
+--- !u!1 &915191765348291474 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7446639910931466508, guid: b94bc3d7483a71a4a9131542defe83e6,
+    type: 3}
+  m_PrefabInstance: {fileID: 7774529640531729054}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &915191764151668803 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7446639912121273053, guid: b94bc3d7483a71a4a9131542defe83e6,
@@ -1665,11 +1742,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5950667627925182031}
     m_Modifications:
-    - target: {fileID: 7446639912121273048, guid: b94bc3d7483a71a4a9131542defe83e6,
-        type: 3}
-      propertyPath: m_Name
-      value: SpikeTrap
-      objectReference: {fileID: 0}
     - target: {fileID: 7446639912121273053, guid: b94bc3d7483a71a4a9131542defe83e6,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1725,16 +1797,32 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 90
       objectReference: {fileID: 0}
-    - target: {fileID: 7446639912121273049, guid: b94bc3d7483a71a4a9131542defe83e6,
+    - target: {fileID: 7446639912121273048, guid: b94bc3d7483a71a4a9131542defe83e6,
+        type: 3}
+      propertyPath: m_Name
+      value: SpikeTrap
+      objectReference: {fileID: 0}
+    - target: {fileID: 3350772138399419123, guid: b94bc3d7483a71a4a9131542defe83e6,
         type: 3}
       propertyPath: active
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 3350772138399419123, guid: b94bc3d7483a71a4a9131542defe83e6,
+        type: 3}
+      propertyPath: spikes
+      value: 
+      objectReference: {fileID: 1649847523486436722}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b94bc3d7483a71a4a9131542defe83e6, type: 3}
 --- !u!4 &1649847522557595299 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7446639912121273053, guid: b94bc3d7483a71a4a9131542defe83e6,
+    type: 3}
+  m_PrefabInstance: {fileID: 8192795524708336766}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1649847523486436722 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7446639910931466508, guid: b94bc3d7483a71a4a9131542defe83e6,
     type: 3}
   m_PrefabInstance: {fileID: 8192795524708336766}
   m_PrefabAsset: {fileID: 0}
@@ -1745,11 +1833,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5950667627925182031}
     m_Modifications:
-    - target: {fileID: 7446639912121273048, guid: b94bc3d7483a71a4a9131542defe83e6,
-        type: 3}
-      propertyPath: m_Name
-      value: SpikeTrap (5)
-      objectReference: {fileID: 0}
     - target: {fileID: 7446639912121273053, guid: b94bc3d7483a71a4a9131542defe83e6,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1805,16 +1888,32 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 90
       objectReference: {fileID: 0}
-    - target: {fileID: 7446639912121273049, guid: b94bc3d7483a71a4a9131542defe83e6,
+    - target: {fileID: 7446639912121273048, guid: b94bc3d7483a71a4a9131542defe83e6,
+        type: 3}
+      propertyPath: m_Name
+      value: SpikeTrap (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3350772138399419123, guid: b94bc3d7483a71a4a9131542defe83e6,
         type: 3}
       propertyPath: active
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 3350772138399419123, guid: b94bc3d7483a71a4a9131542defe83e6,
+        type: 3}
+      propertyPath: spikes
+      value: 
+      objectReference: {fileID: 1234140848909018872}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b94bc3d7483a71a4a9131542defe83e6, type: 3}
 --- !u!4 &1234140850140243241 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7446639912121273053, guid: b94bc3d7483a71a4a9131542defe83e6,
+    type: 3}
+  m_PrefabInstance: {fileID: 8536374201048920052}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1234140848909018872 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7446639910931466508, guid: b94bc3d7483a71a4a9131542defe83e6,
     type: 3}
   m_PrefabInstance: {fileID: 8536374201048920052}
   m_PrefabAsset: {fileID: 0}
