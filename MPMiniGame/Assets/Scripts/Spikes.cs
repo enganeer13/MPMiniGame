@@ -2,11 +2,10 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Spikes : MonoBehaviour
+public class Spikes : AutoTrap
 {
-    public GameObject spikes;
     public bool active;
-    public float timer;
+    public GameObject spikes;
     private Vector3 direction;
     private Vector3 defaultRelative;
     private BoxCollider2D spikesCollider;
@@ -27,17 +26,19 @@ public class Spikes : MonoBehaviour
             triggerSpikes();
         else
             retractSpikes();
+        if (automatic)
+            activate();
     }
     void readySpikes()
     {
-        spikes.transform.position = transform.position - defaultRelative + direction * .3f;
+        spikes.transform.position = transform.position - defaultRelative + direction * .15f;
     }
     
     //activate trap
     void triggerSpikes()
     {
         active = true;
-        spikes.transform.position = transform.position - defaultRelative + direction;
+        spikes.transform.position = transform.position - defaultRelative + direction * .75f;
     }
 
     //deactiveate trap
@@ -47,13 +48,32 @@ public class Spikes : MonoBehaviour
         spikes.transform.position = transform.position - defaultRelative;
     }
 
+    void toggleSpikes()
+    {
+        spikes.transform.position = active ? transform.position - defaultRelative : transform.position - defaultRelative + direction * .75f;
+        active = active ? false : true;
+    }
+
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if(!active && collision.GetComponent<playerMovement>())
+        if(!automatic && !active && collision.GetComponent<playerMovement>())
+        {
+            activateOnce();
+        }
+    }
+
+    public override void activateOnce()
+    {
+        if (!automatic && !active)
         {
             readySpikes();
-            Invoke("triggerSpikes", timer);
-            Invoke("retractSpikes", timer * 2);
+            Invoke("triggerSpikes", cooldownOffset);
+            Invoke("retractSpikes", cooldownOffset * 2);
+            timer = Time.time + cooldownOffset;
+        }
+        else if (automatic)
+        {
+            toggleSpikes();
         }
     }
 }

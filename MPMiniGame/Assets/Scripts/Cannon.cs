@@ -6,11 +6,9 @@ public class Cannon : MonoBehaviour, Trap
 {
     public float force;
     public float cooldownOffset;
-    public bool toggle;
     public string tag;
-    private bool firing;
-    private float timer;
     private Vector3 direction;
+    private float timer;
     // Start is called before the first frame update
     void Start()
     {
@@ -24,28 +22,11 @@ public class Cannon : MonoBehaviour, Trap
 
     public void activate()
     {
-        //Shoot projectile of tag in specified direction and force
-        if (!toggle && Time.time > timer)
+        if (Time.time >= timer + cooldownOffset)
         {
-            fire();
-            timer = Time.time + cooldownOffset;
+            GameObject projectile = ObjectPooler.Instance.SpawnFromPool(tag, transform.position, Quaternion.identity);
+            projectile.GetComponent<Rigidbody2D>().AddForce(direction * force);
+            timer = Time.time;
         }
-        else if(!firing && toggle && Time.time > timer)
-        {
-            InvokeRepeating("fire", 0.00001f, cooldownOffset);
-            firing = true;
-        }
-        else if(firing && toggle && Time.time > timer)
-        {
-            CancelInvoke();
-            firing = false;
-        }
-        
-    }
-
-    void fire()
-    {
-        GameObject projectile = ObjectPooler.Instance.SpawnFromPool(tag, transform.position, Quaternion.identity);
-        projectile.GetComponent<Rigidbody2D>().AddForce(direction * force);
     }
 }

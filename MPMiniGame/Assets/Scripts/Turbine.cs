@@ -2,11 +2,12 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Turbine : MonoBehaviour, Trap
+public class Turbine : AutoTrap, Trap
 {
     public Wind wind;
     public ParticleSystem particles;
     public float force = 10f;
+    public bool active;
     bool toggle;
     BoxCollider2D windBox;
     
@@ -22,14 +23,41 @@ public class Turbine : MonoBehaviour, Trap
         wind.direction = direction;
         wind.force = force;
         windBox = wind.hitbox;
-        particles.enableEmission = false;
-        windBox.enabled = false;
+        if (active)
+            fanOn();
+        else
+            fanOff();
+        if (automatic)
+            activate();
     }
-    public void activate()
+    void fanOff()
+    {
+        active = false;
+        windBox.enabled = false;
+        particles.Play();
+    }
+
+    void fanOn()
+    {
+        active = true;
+        windBox.enabled = true;
+        particles.Stop();
+    }
+
+    void toggleFan()
     {
         //activate wind hitbox
         windBox.enabled = windBox.enabled ? false : true;
-        particles.enableEmission = particles.enableEmission ? false : true;
+        active = active ? false : true;
+        if (active)
+            particles.Play();
+        else
+            particles.Stop();
+    }
+
+    public override void activateOnce()
+    {
+        toggleFan();
     }
   
 }
