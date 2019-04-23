@@ -26,6 +26,7 @@ public class PhotonLobby : MonoBehaviourPunCallbacks
     public override void OnConnectedToMaster()
     {
         Debug.Log("Player has connected to the Photon master server");
+        PhotonNetwork.AutomaticallySyncScene = true;
         battleButton.SetActive(true);
     }
 
@@ -58,10 +59,6 @@ public class PhotonLobby : MonoBehaviourPunCallbacks
         CreateRoom();
     }
 
-    public override void OnJoinedRoom()
-    {
-        Debug.Log("We are now in a room");
-    }
 
     public void OnCancelButtonClicked()
     {

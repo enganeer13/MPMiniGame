@@ -4,5 +4,11 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/Photon Test Scenes/Photon Connection.unity
+    guid: 8f946b2a26d75414ea2a836a9857a3be
+  - enabled: 1
+    path: Assets/Scenes/Photon Test Scenes/Multiplayer.unity
+    guid: 5b86d05fff9294fb680da34d9d189844
   m_configObjects: {}
