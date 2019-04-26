@@ -165,9 +165,8 @@ public class PhotonRoom : MonoBehaviourPunCallbacks, IInRoomCallbacks
     {
         isGameLoaded = true;
         if(!PhotonNetwork.IsMasterClient)
-        {
             return;
-        }
+        
 
         PhotonNetwork.LoadLevel(MultiplayerSetting.multiplayerSetting.multiplayerScene);
     }
