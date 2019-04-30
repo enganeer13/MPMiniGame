@@ -15,8 +15,8 @@ TagManager:
   - 
   - 
   - Ground
-  - Trap
-  - Non-Physics
+  - 
+  - 
   - 
   - 
   - 
@@ -47,4 +47,7 @@ TagManager:
     locked: 0
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: ForeGround
+    uniqueID: 2702816523
     locked: 0
