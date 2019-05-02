@@ -18,5 +18,10 @@ public class Restart : MonoBehaviour
         {
             SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         }
+
+        if (Input.GetKey(KeyCode.Home))
+        {
+            SceneManager.LoadScene(0);
+        }
     }
 }
