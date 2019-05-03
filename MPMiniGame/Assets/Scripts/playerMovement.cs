@@ -1,20 +1,22 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using Photon.Pun;
 using UnityEngine;
 
 public class playerMovement : MonoBehaviour
 {
-    public characterController controller;
+    public CharacterController controller;
     public float horizontalMove = 0f;
     public float runSpeed = 40f;
     public bool jump = false;
+    private PhotonView PV;
 
     public Animator animator;
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        PV = GetComponent<PhotonView>();
     }
 
     // Update is called once per frame
