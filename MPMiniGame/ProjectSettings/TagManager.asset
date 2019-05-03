@@ -4,8 +4,8 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - Ground
   - TrapMaster
+  - Ground
   layers:
   - Default
   - TransparentFX
@@ -15,16 +15,10 @@ TagManager:
   - UI
   - 
   - 
-  - Ground
-<<<<<<< HEAD
-  - Trap
-  - Non-Physics
-  - Player
-=======
   - 
   - 
   - 
->>>>>>> 32826c9e120dca702a6ee08ea86a9a840b6c3964
+  - 
   - 
   - 
   - 
@@ -46,15 +40,6 @@ TagManager:
   - 
   - 
   m_SortingLayers:
-  - name: BackGround
-    uniqueID: 297359709
-    locked: 0
-  - name: BackStage
-    uniqueID: 3553342171
-    locked: 0
   - name: Default
     uniqueID: 0
-    locked: 0
-  - name: ForeGround
-    uniqueID: 2702816523
     locked: 0
