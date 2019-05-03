@@ -982,6 +982,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 599104583988346892, guid: 4eeb4371fb01247f8bd97446bb4746af,
+        type: 3}
+      propertyPath: viewIdField
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 599104583988346892, guid: 4eeb4371fb01247f8bd97446bb4746af,
+        type: 3}
+      propertyPath: InstantiationId
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 17894089192989532, guid: 4eeb4371fb01247f8bd97446bb4746af,
         type: 3}
       propertyPath: doubleJump
