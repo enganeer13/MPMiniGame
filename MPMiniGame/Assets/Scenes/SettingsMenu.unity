@@ -592,7 +592,7 @@ Camera:
   m_GameObject: {fileID: 264911144}
   m_Enabled: 1
   serializedVersion: 2
-  m_ClearFlags: 1
+  m_ClearFlags: 2
   m_BackGroundColor: {r: 0, g: 0, b: 0, a: 0}
   m_projectionMatrixMode: 1
   m_SensorSize: {x: 36, y: 24}
@@ -617,12 +617,12 @@ Camera:
   m_RenderingPath: -1
   m_TargetTexture: {fileID: 0}
   m_TargetDisplay: 0
-  m_TargetEye: 3
+  m_TargetEye: 0
   m_HDR: 1
-  m_AllowMSAA: 1
+  m_AllowMSAA: 0
   m_AllowDynamicResolution: 0
   m_ForceIntoRT: 0
-  m_OcclusionCulling: 1
+  m_OcclusionCulling: 0
   m_StereoConvergence: 10
   m_StereoSeparation: 0.022
 --- !u!4 &264911147
@@ -3527,6 +3527,11 @@ PrefabInstance:
       propertyPath: menuButtonController
       value: 
       objectReference: {fileID: 750052059}
+    - target: {fileID: 3811204000496667216, guid: eaea30ca2f6638a47a571915b9c3a42d,
+        type: 3}
+      propertyPath: desiredSceneIndex
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3811204000496667219, guid: eaea30ca2f6638a47a571915b9c3a42d,
         type: 3}
       propertyPath: menuButtonController

@@ -63,7 +63,7 @@ public class TrapMaster : MonoBehaviour
             cooldowns[i] = Mathf.Max(0f, cooldowns[i] - Time.deltaTime);
 
         //Drop Spawnable
-        if(Input.GetButtonDown("Vertical2") && cooldowns[spawnIndex] <= 0f)
+        if(Input.GetButtonDown("Fire1") && cooldowns[spawnIndex] <= 0f)
         {
             GameObject g = ObjectPooler.Instance.SpawnFromPool(spawnable[spawnIndex].name, transform.position, Quaternion.identity);
             cooldowns[spawnIndex] = maxCooldowns[spawnIndex];

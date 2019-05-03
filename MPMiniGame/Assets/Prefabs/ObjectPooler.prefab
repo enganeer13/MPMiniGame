@@ -84,3 +84,11 @@ MonoBehaviour:
     prefab: {fileID: 1738962844692946595, guid: 2d5cc35761cb9c84d83f4b0b475249de,
       type: 3}
     size: 1
+  - tag: grapeValley
+    prefab: {fileID: 1738962844692946595, guid: 3283e0f21dd6e0a4ebb5fc4b53b30f43,
+      type: 3}
+    size: 1
+  - tag: snakeValley
+    prefab: {fileID: 1738962844692946595, guid: 7f3ba58fb4746fb41a38ca63c2f27e90,
+      type: 3}
+    size: 1

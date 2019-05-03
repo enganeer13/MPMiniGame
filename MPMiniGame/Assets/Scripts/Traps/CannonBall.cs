@@ -9,7 +9,7 @@ public class CannonBall : DeathBox
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.GetComponent<playerMovement>() && canKill)
-            die();
+            die(collision.gameObject);
         else
             gameObject.SetActive(false);
     }

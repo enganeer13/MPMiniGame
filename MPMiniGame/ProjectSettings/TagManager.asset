@@ -5,6 +5,7 @@ TagManager:
   serializedVersion: 2
   tags:
   - Ground
+  - TrapMaster
   layers:
   - Default
   - TransparentFX
@@ -15,9 +16,15 @@ TagManager:
   - 
   - 
   - Ground
+<<<<<<< HEAD
   - Trap
   - Non-Physics
   - Player
+=======
+  - 
+  - 
+  - 
+>>>>>>> 32826c9e120dca702a6ee08ea86a9a840b6c3964
   - 
   - 
   - 
@@ -47,4 +54,7 @@ TagManager:
     locked: 0
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: ForeGround
+    uniqueID: 2702816523
     locked: 0

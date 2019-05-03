@@ -12,24 +12,37 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f3758f8f58fdef43803eb9be1df0608, type: 3}
   m_Name: PhotonServerSettings
   m_EditorClassIdentifier: 
-  AppSettings:
-    AppIdRealtime: 58b85c1e-1e3b-44d8-827e-40b803353650
-    AppIdChat: 
-    AppIdVoice: 
-    AppVersion: 
-    UseNameServer: 1
-    FixedRegion: 
-    Server: 
-    Port: 0
-    Protocol: 0
-    EnableLobbyStatistics: 0
-    NetworkLogging: 1
-  StartInOfflineMode: 0
+  AppID: 
+  VoiceAppID: 
+  ChatAppID: 
+  HostType: 0
+  PreferredRegion: 0
+  EnabledRegions: -1
+  Protocol: 0
+  ServerAddress: 
+  ServerPort: 5055
+  VoiceServerPort: 5055
+  JoinLobby: 0
+  EnableLobbyStatistics: 0
   PunLogging: 0
-  EnableSupportLogger: 0
+  NetworkLogging: 1
   RunInBackground: 1
   RpcList:
+<<<<<<< HEAD
   - RPC_CreatePlayer
   - RPC_LoadedGameScene
+=======
+  - DestroySpaceship
+  - Fire
+  - RespawnSpaceship
+  - Chat
+  - DestroyRpc
+  - InstantiateRpc
+  - PickupItemInit
+  - PunPickup
+  - PunPickupSimple
+  - PunRespawn
+  - RequestForPickupItems
+  - RequestForPickupTimes
+>>>>>>> 32826c9e120dca702a6ee08ea86a9a840b6c3964
   DisableAutoOpenWizard: 1
-  ShowSettings: 0

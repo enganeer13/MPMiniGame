@@ -190,6 +190,7 @@ MonoBehaviour:
   animator: {fileID: 3811204000496667220}
   animatorFunctions: {fileID: 3811204000496667219}
   thisIndex: 0
+  desiredSceneIndex: 2
 --- !u!114 &3811204000496667219
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -333,7 +334,7 @@ MonoBehaviour:
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_Font: {fileID: 12800000, guid: d97181c9d9b81fb4882c1502c0f879cc, type: 3}
     m_FontSize: 31
     m_FontStyle: 0
     m_BestFit: 0
