@@ -17,5 +17,9 @@ public class TileModifier : MonoBehaviour
             ObjectPooler.Instance.SpawnFromPool(tag, v, Quaternion.identity);
             gameObject.SetActive(false);
         }
+        else
+        {
+            gameObject.SetActive(false);
+        }
     }
 }

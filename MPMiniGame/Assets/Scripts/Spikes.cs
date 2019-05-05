@@ -39,6 +39,7 @@ public class Spikes : AutoTrap
     {
         active = true;
         spikes.transform.position = transform.position - defaultRelative + direction * .75f;
+        spikesCollider.enabled = true;
     }
 
     //deactiveate trap
@@ -46,12 +47,14 @@ public class Spikes : AutoTrap
     {
         active = false;
         spikes.transform.position = transform.position - defaultRelative;
+        spikesCollider.enabled = false;
     }
 
     void toggleSpikes()
     {
         spikes.transform.position = active ? transform.position - defaultRelative : transform.position - defaultRelative + direction * .75f;
         active = active ? false : true;
+        spikesCollider.enabled = spikesCollider.enabled ? false : true;
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
