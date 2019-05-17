@@ -526,15 +526,11 @@ Tilemap:
     m_Data: {fileID: 11400000, guid: a1b67f68d6176e64d85fddfb7860dfb1, type: 2}
   - m_RefCount: 23
     m_Data: {fileID: 11400000, guid: 21d91504ac3106343be6147f132ccee5, type: 2}
-  - m_RefCount: 0
-    m_Data: {fileID: 0}
   m_TileSpriteArray:
   - m_RefCount: 23
     m_Data: {fileID: 21300000, guid: 3f5a793864eab480dacdd71962666b74, type: 3}
   - m_RefCount: 23
     m_Data: {fileID: 21300000, guid: 39a5c7e45a71744138474718f7580bca, type: 3}
-  - m_RefCount: 0
-    m_Data: {fileID: 0}
   m_TileMatrixArray:
   - m_RefCount: 46
     m_Data:
@@ -560,7 +556,7 @@ Tilemap:
   m_AnimationFrameRate: 1
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Origin: {x: 0, y: -6, z: 0}
-  m_Size: {x: 32, y: 10, z: 1}
+  m_Size: {x: 23, y: 10, z: 1}
   m_TileAnchor: {x: 0.5, y: 0.5, z: 0}
   m_TileOrientation: 0
   m_TileOrientationMatrix:
@@ -646,6 +642,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5950667627925182031}
     m_Modifications:
+    - target: {fileID: 262613759685012162, guid: ecec51f0c3a570b47a7cfba7699e998d,
+        type: 3}
+      propertyPath: m_Name
+      value: Turbine (6)
+      objectReference: {fileID: 0}
     - target: {fileID: 262613759685012166, guid: ecec51f0c3a570b47a7cfba7699e998d,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -711,11 +712,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 262613759685012162, guid: ecec51f0c3a570b47a7cfba7699e998d,
-        type: 3}
-      propertyPath: m_Name
-      value: Turbine (6)
-      objectReference: {fileID: 0}
     - target: {fileID: 262613759685012161, guid: ecec51f0c3a570b47a7cfba7699e998d,
         type: 3}
       propertyPath: automatic
@@ -746,6 +742,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5950667627925182031}
     m_Modifications:
+    - target: {fileID: 262613759685012162, guid: ecec51f0c3a570b47a7cfba7699e998d,
+        type: 3}
+      propertyPath: m_Name
+      value: Turbine (5)
+      objectReference: {fileID: 0}
     - target: {fileID: 262613759685012166, guid: ecec51f0c3a570b47a7cfba7699e998d,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -811,11 +812,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 262613759685012162, guid: ecec51f0c3a570b47a7cfba7699e998d,
-        type: 3}
-      propertyPath: m_Name
-      value: Turbine (5)
-      objectReference: {fileID: 0}
     - target: {fileID: 262613759685012161, guid: ecec51f0c3a570b47a7cfba7699e998d,
         type: 3}
       propertyPath: automatic
@@ -846,6 +842,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5950667627925182031}
     m_Modifications:
+    - target: {fileID: 262613759685012162, guid: ecec51f0c3a570b47a7cfba7699e998d,
+        type: 3}
+      propertyPath: m_Name
+      value: Turbine (4)
+      objectReference: {fileID: 0}
     - target: {fileID: 262613759685012166, guid: ecec51f0c3a570b47a7cfba7699e998d,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -911,11 +912,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 262613759685012162, guid: ecec51f0c3a570b47a7cfba7699e998d,
-        type: 3}
-      propertyPath: m_Name
-      value: Turbine (4)
-      objectReference: {fileID: 0}
     - target: {fileID: 262613759685012161, guid: ecec51f0c3a570b47a7cfba7699e998d,
         type: 3}
       propertyPath: automatic
@@ -946,6 +942,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5950667627925182031}
     m_Modifications:
+    - target: {fileID: 262613759685012162, guid: ecec51f0c3a570b47a7cfba7699e998d,
+        type: 3}
+      propertyPath: m_Name
+      value: Turbine (2)
+      objectReference: {fileID: 0}
     - target: {fileID: 262613759685012166, guid: ecec51f0c3a570b47a7cfba7699e998d,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1011,11 +1012,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 262613759685012162, guid: ecec51f0c3a570b47a7cfba7699e998d,
-        type: 3}
-      propertyPath: m_Name
-      value: Turbine (2)
-      objectReference: {fileID: 0}
     - target: {fileID: 262613759685012161, guid: ecec51f0c3a570b47a7cfba7699e998d,
         type: 3}
       propertyPath: automatic
@@ -1041,6 +1037,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5950667627925182031}
     m_Modifications:
+    - target: {fileID: 1595861311989194193, guid: 9b3ab25ce9867264abdff68cf286dc2e,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 3361989469991283590, guid: 9b3ab25ce9867264abdff68cf286dc2e,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1106,11 +1107,6 @@ PrefabInstance:
       propertyPath: m_LocalPosition.y
       value: 5
       objectReference: {fileID: 0}
-    - target: {fileID: 1595861311989194193, guid: 9b3ab25ce9867264abdff68cf286dc2e,
-        type: 3}
-      propertyPath: m_RootOrder
-      value: 7
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9b3ab25ce9867264abdff68cf286dc2e, type: 3}
 --- !u!4 &8457048934433541827 stripped
@@ -1126,6 +1122,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5950667627925182031}
     m_Modifications:
+    - target: {fileID: 262613759685012162, guid: ecec51f0c3a570b47a7cfba7699e998d,
+        type: 3}
+      propertyPath: m_Name
+      value: Turbine (1)
+      objectReference: {fileID: 0}
     - target: {fileID: 262613759685012166, guid: ecec51f0c3a570b47a7cfba7699e998d,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1191,11 +1192,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 262613759685012162, guid: ecec51f0c3a570b47a7cfba7699e998d,
-        type: 3}
-      propertyPath: m_Name
-      value: Turbine (1)
-      objectReference: {fileID: 0}
     - target: {fileID: 262613759685012161, guid: ecec51f0c3a570b47a7cfba7699e998d,
         type: 3}
       propertyPath: automatic
@@ -1221,6 +1217,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5950667627925182031}
     m_Modifications:
+    - target: {fileID: 262613759685012162, guid: ecec51f0c3a570b47a7cfba7699e998d,
+        type: 3}
+      propertyPath: m_Name
+      value: Turbine
+      objectReference: {fileID: 0}
     - target: {fileID: 262613759685012166, guid: ecec51f0c3a570b47a7cfba7699e998d,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1285,11 +1286,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.y
       value: 1.0000005
-      objectReference: {fileID: 0}
-    - target: {fileID: 262613759685012162, guid: ecec51f0c3a570b47a7cfba7699e998d,
-        type: 3}
-      propertyPath: m_Name
-      value: Turbine
       objectReference: {fileID: 0}
     - target: {fileID: 262613759685012161, guid: ecec51f0c3a570b47a7cfba7699e998d,
         type: 3}

@@ -96,7 +96,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bb3993ed957009341b70c2fdf6626124, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  tag: Glue
+  modifier: {fileID: 1050375432710741748, guid: ee79c1647cf4f044f9d010b977f5a037,
+    type: 3}
 --- !u!50 &4891710461677162774
 Rigidbody2D:
   serializedVersion: 4

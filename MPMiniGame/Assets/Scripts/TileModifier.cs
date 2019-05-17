@@ -5,7 +5,7 @@ using UnityEngine.Tilemaps;
 
 public class TileModifier : MonoBehaviour
 {
-    public string tag;
+    public GameObject modifier;
     //(Try to) detect tile hit and spawn tile mod on it
     private void OnCollisionEnter2D(Collision2D collision)
     {
@@ -14,7 +14,13 @@ public class TileModifier : MonoBehaviour
         {
             Vector3 v = collision.GetContact(0).point;
             v = tileMap.GetCellCenterWorld(tileMap.WorldToCell(v));
-            ObjectPooler.Instance.SpawnFromPool(tag, v, Quaternion.identity);
+            ObjectPooler.Instance.SpawnFromPool(modifier.name, v, Quaternion.identity);
+            gameObject.SetActive(false);
+        }
+           else if(collision.gameObject.layer == 8)
+        {
+            GameObject mod = ObjectPooler.Instance.SpawnFromPool(modifier.name, collision.transform.position, Quaternion.identity);
+            mod.transform.parent = collision.transform;
             gameObject.SetActive(false);
         }
         else
