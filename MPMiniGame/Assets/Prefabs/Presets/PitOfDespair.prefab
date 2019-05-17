@@ -903,13 +903,19 @@ PrefabInstance:
     - target: {fileID: 4464186432535241896, guid: 0faa4f153490fbf4d9a776ff790b8acf,
         type: 3}
       propertyPath: cooldownOffset
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4464186432535241896, guid: 0faa4f153490fbf4d9a776ff790b8acf,
         type: 3}
       propertyPath: tag
       value: BouncyBlade
       objectReference: {fileID: 0}
+    - target: {fileID: 4464186432535241896, guid: 0faa4f153490fbf4d9a776ff790b8acf,
+        type: 3}
+      propertyPath: projectile
+      value: 
+      objectReference: {fileID: 8585523440785362163, guid: a97f6dc3752589f4e9310e52cb17fdcd,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0faa4f153490fbf4d9a776ff790b8acf, type: 3}
 --- !u!4 &3542021328816863635 stripped
@@ -1079,13 +1085,19 @@ PrefabInstance:
     - target: {fileID: 4464186432535241896, guid: 0faa4f153490fbf4d9a776ff790b8acf,
         type: 3}
       propertyPath: cooldownOffset
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4464186432535241896, guid: 0faa4f153490fbf4d9a776ff790b8acf,
         type: 3}
       propertyPath: tag
       value: BouncyBlade
       objectReference: {fileID: 0}
+    - target: {fileID: 4464186432535241896, guid: 0faa4f153490fbf4d9a776ff790b8acf,
+        type: 3}
+      propertyPath: projectile
+      value: 
+      objectReference: {fileID: 8585523440785362163, guid: a97f6dc3752589f4e9310e52cb17fdcd,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0faa4f153490fbf4d9a776ff790b8acf, type: 3}
 --- !u!4 &1371804162276198226 stripped

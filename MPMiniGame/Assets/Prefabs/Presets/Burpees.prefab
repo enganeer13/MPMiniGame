@@ -1335,6 +1335,12 @@ PrefabInstance:
       propertyPath: tag
       value: BouncyBlade
       objectReference: {fileID: 0}
+    - target: {fileID: 4464186432535241896, guid: 0faa4f153490fbf4d9a776ff790b8acf,
+        type: 3}
+      propertyPath: projectile
+      value: 
+      objectReference: {fileID: 8585523440785362163, guid: a97f6dc3752589f4e9310e52cb17fdcd,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0faa4f153490fbf4d9a776ff790b8acf, type: 3}
 --- !u!4 &4137818160469696138 stripped
@@ -1425,6 +1431,12 @@ PrefabInstance:
       propertyPath: tag
       value: BouncyBlade
       objectReference: {fileID: 0}
+    - target: {fileID: 4464186432535241896, guid: 0faa4f153490fbf4d9a776ff790b8acf,
+        type: 3}
+      propertyPath: projectile
+      value: 
+      objectReference: {fileID: 8585523440785362163, guid: a97f6dc3752589f4e9310e52cb17fdcd,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0faa4f153490fbf4d9a776ff790b8acf, type: 3}
 --- !u!4 &4284577515603839127 stripped
@@ -1515,6 +1527,12 @@ PrefabInstance:
       propertyPath: tag
       value: BouncyBlade
       objectReference: {fileID: 0}
+    - target: {fileID: 4464186432535241896, guid: 0faa4f153490fbf4d9a776ff790b8acf,
+        type: 3}
+      propertyPath: projectile
+      value: 
+      objectReference: {fileID: 8585523440785362163, guid: a97f6dc3752589f4e9310e52cb17fdcd,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0faa4f153490fbf4d9a776ff790b8acf, type: 3}
 --- !u!4 &2993202722365407797 stripped
@@ -1605,6 +1623,12 @@ PrefabInstance:
       propertyPath: tag
       value: BouncyBlade
       objectReference: {fileID: 0}
+    - target: {fileID: 4464186432535241896, guid: 0faa4f153490fbf4d9a776ff790b8acf,
+        type: 3}
+      propertyPath: projectile
+      value: 
+      objectReference: {fileID: 8585523440785362163, guid: a97f6dc3752589f4e9310e52cb17fdcd,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0faa4f153490fbf4d9a776ff790b8acf, type: 3}
 --- !u!4 &2824921067390505810 stripped
@@ -1695,6 +1719,12 @@ PrefabInstance:
       propertyPath: tag
       value: BouncyBlade
       objectReference: {fileID: 0}
+    - target: {fileID: 4464186432535241896, guid: 0faa4f153490fbf4d9a776ff790b8acf,
+        type: 3}
+      propertyPath: projectile
+      value: 
+      objectReference: {fileID: 8585523440785362163, guid: a97f6dc3752589f4e9310e52cb17fdcd,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0faa4f153490fbf4d9a776ff790b8acf, type: 3}
 --- !u!4 &2362763941145905893 stripped
@@ -1785,6 +1815,12 @@ PrefabInstance:
       propertyPath: tag
       value: BouncyBlade
       objectReference: {fileID: 0}
+    - target: {fileID: 4464186432535241896, guid: 0faa4f153490fbf4d9a776ff790b8acf,
+        type: 3}
+      propertyPath: projectile
+      value: 
+      objectReference: {fileID: 8585523440785362163, guid: a97f6dc3752589f4e9310e52cb17fdcd,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0faa4f153490fbf4d9a776ff790b8acf, type: 3}
 --- !u!4 &2046064993114606306 stripped
@@ -1875,6 +1911,12 @@ PrefabInstance:
       propertyPath: tag
       value: BouncyBlade
       objectReference: {fileID: 0}
+    - target: {fileID: 4464186432535241896, guid: 0faa4f153490fbf4d9a776ff790b8acf,
+        type: 3}
+      propertyPath: projectile
+      value: 
+      objectReference: {fileID: 8585523440785362163, guid: a97f6dc3752589f4e9310e52cb17fdcd,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0faa4f153490fbf4d9a776ff790b8acf, type: 3}
 --- !u!4 &164786693938595127 stripped
@@ -1965,6 +2007,12 @@ PrefabInstance:
       propertyPath: tag
       value: BouncyBlade
       objectReference: {fileID: 0}
+    - target: {fileID: 4464186432535241896, guid: 0faa4f153490fbf4d9a776ff790b8acf,
+        type: 3}
+      propertyPath: projectile
+      value: 
+      objectReference: {fileID: 8585523440785362163, guid: a97f6dc3752589f4e9310e52cb17fdcd,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0faa4f153490fbf4d9a776ff790b8acf, type: 3}
 --- !u!4 &8150770711097573726 stripped
