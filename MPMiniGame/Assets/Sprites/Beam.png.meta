@@ -1,15 +1,11 @@
 fileFormatVersion: 2
-guid: 852001f8895b5834789cf56446179b3f
+guid: 431fb29197763ec44b782fee78bd707e
 TextureImporter:
   fileIDToRecycleName:
-    21300000: mpGame_UFO_0
-    21300002: mpGame_UFO_1
-    21300004: mpGame_UFO_2
-    21300006: mpGame_UFO_3
-    21300008: mpGame_UFO_4
-    21300010: mpGame_UFO_5
-    21300012: mpGame_UFO_6
-    21300014: mpGame_UFO_7
+    21300000: Beam_0
+    21300002: Beam_1
+    21300004: Beam_2
+    21300006: Beam_3
   externalObjects: {}
   serializedVersion: 7
   mipmaps:
@@ -88,39 +84,17 @@ TextureImporter:
     allowsAlphaSplitting: 0
     overridden: 0
     androidETC2FallbackOverride: 0
-  - serializedVersion: 2
-    buildTarget: Android
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    androidETC2FallbackOverride: 0
-  - serializedVersion: 2
-    buildTarget: WebGL
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    androidETC2FallbackOverride: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: mpGame_UFO_0
+      name: Beam_0
       rect:
         serializedVersion: 2
-        x: 1
-        y: 4
-        width: 30
-        height: 26
+        x: 0
+        y: 0
+        width: 16
+        height: 4
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,19 +102,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 279b9bb00bc78ac42a35acf9f762eeaf
+      spriteID: da66944314dc98e4f8893fd193ad6864
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: mpGame_UFO_1
+      name: Beam_1
       rect:
         serializedVersion: 2
-        x: 33
-        y: 3
-        width: 30
-        height: 27
+        x: 16
+        y: 0
+        width: 16
+        height: 4
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -148,19 +122,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f3ca16f9414f37541b2379a8a601706d
+      spriteID: 3d2a5a5fabed1534788a3e79a217a0a2
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: mpGame_UFO_2
+      name: Beam_2
       rect:
         serializedVersion: 2
-        x: 65
-        y: 2
-        width: 30
-        height: 28
+        x: 32
+        y: 0
+        width: 16
+        height: 4
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -168,19 +142,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b7c44643e0423054b8c320dbf306b802
+      spriteID: f81f879c2bd99d247a68b17a747821f7
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: mpGame_UFO_3
+      name: Beam_3
       rect:
         serializedVersion: 2
-        x: 97
-        y: 3
-        width: 30
-        height: 27
+        x: 48
+        y: 0
+        width: 16
+        height: 4
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -188,87 +162,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cf53842eb620a024b8bff808f6ff839f
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: mpGame_UFO_4
-      rect:
-        serializedVersion: 2
-        x: 129
-        y: 4
-        width: 30
-        height: 26
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c723f1d1c63a61e4f9f62e2f435ae538
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: mpGame_UFO_5
-      rect:
-        serializedVersion: 2
-        x: 161
-        y: 3
-        width: 30
-        height: 27
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d7003e08acd5bce43b0b80bd345188e0
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: mpGame_UFO_6
-      rect:
-        serializedVersion: 2
-        x: 193
-        y: 2
-        width: 30
-        height: 28
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 3c3b4e27489562148be0bc258301a126
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: mpGame_UFO_7
-      rect:
-        serializedVersion: 2
-        x: 225
-        y: 3
-        width: 30
-        height: 27
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 53115977890787142ad09592a5ccbb72
+      spriteID: 44f5e72165b122f4f9220687f16e3d31
       vertices: []
       indices: 
       edges: []
@@ -276,7 +170,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 5e782ec1a582ba14690c815e37bff29e
+    spriteID: 11591e34a3bcefe41b58e3886b1562f5
     vertices: []
     indices: 
     edges: []
