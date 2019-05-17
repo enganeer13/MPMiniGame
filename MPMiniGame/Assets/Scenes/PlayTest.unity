@@ -472,7 +472,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 81665efc1d2c97a40b7db5fe7b5332da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 2.5
+  speed: 0
 --- !u!81 &883994680
 AudioListener:
   m_ObjectHideFlags: 0
@@ -782,6 +782,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4395800182632249171, guid: f190090fa8bfefe48901c76436fba2ca,
+        type: 3}
+      propertyPath: pools.Array.data[5].size
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4395800182632249171, guid: f190090fa8bfefe48901c76436fba2ca,
+        type: 3}
+      propertyPath: pools.Array.data[6].size
+      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f190090fa8bfefe48901c76436fba2ca, type: 3}

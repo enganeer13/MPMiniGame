@@ -4,13 +4,12 @@ using UnityEngine;
 
 public class Glue : MonoBehaviour
 {
-    float defaultMovementSpeed = 0;
+    public float defaultMovementSpeed;
     private void OnTriggerEnter2D(Collider2D collision)
     {
         playerMovement character = collision.GetComponent<playerMovement>();
         if(character)
         {
-            defaultMovementSpeed = character.runSpeed;
             character.runSpeed /= 2;
         }
     }

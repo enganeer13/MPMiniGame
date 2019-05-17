@@ -577,10 +577,6 @@ Tilemap:
     m_Data: {fileID: 11400000, guid: a7fce31523f53174e8428961a4079091, type: 2}
   - m_RefCount: 7
     m_Data: {fileID: 11400000, guid: 828b2e0521a03434fbf178afde541989, type: 2}
-  - m_RefCount: 0
-    m_Data: {fileID: 0}
-  - m_RefCount: 0
-    m_Data: {fileID: 0}
   m_TileSpriteArray:
   - m_RefCount: 8
     m_Data: {fileID: 21300000, guid: 88fa3531692b74cd0b6b60f2d94ad366, type: 3}
@@ -596,10 +592,6 @@ Tilemap:
     m_Data: {fileID: 21300000, guid: 9eae35abcc1354d0587093f316487e86, type: 3}
   - m_RefCount: 7
     m_Data: {fileID: 21300000, guid: 8dfa5f3f329fe428f82d346c462d90aa, type: 3}
-  - m_RefCount: 0
-    m_Data: {fileID: 0}
-  - m_RefCount: 0
-    m_Data: {fileID: 0}
   m_TileMatrixArray:
   - m_RefCount: 51
     m_Data:
@@ -771,16 +763,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1595861311989194199, guid: 9b3ab25ce9867264abdff68cf286dc2e,
-        type: 3}
-      propertyPath: m_Angle
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1595861311989194199, guid: 9b3ab25ce9867264abdff68cf286dc2e,
-        type: 3}
-      propertyPath: m_TranslationLimits.m_UpperTranslation
-      value: 4
-      objectReference: {fileID: 0}
     - target: {fileID: 8865463141532531360, guid: 9b3ab25ce9867264abdff68cf286dc2e,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -790,6 +772,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalPosition.y
       value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1595861311989194199, guid: 9b3ab25ce9867264abdff68cf286dc2e,
+        type: 3}
+      propertyPath: m_Angle
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1595861311989194199, guid: 9b3ab25ce9867264abdff68cf286dc2e,
+        type: 3}
+      propertyPath: m_TranslationLimits.m_UpperTranslation
+      value: 4
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9b3ab25ce9867264abdff68cf286dc2e, type: 3}
