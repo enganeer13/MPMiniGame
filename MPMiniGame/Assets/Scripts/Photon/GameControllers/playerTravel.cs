@@ -31,12 +31,16 @@ public class playerTravel : MonoBehaviour
     {
         if(Input.GetKey(KeyCode.D))
         {
-            //myCC.Move(transform.right * Time.deltaTime * movementSpeed);
+            myCC.Move(transform.right * Time.deltaTime * movementSpeed);
         }
 
         if (Input.GetKey(KeyCode.A))
         {
-            //myCC.Move(-transform.right * Time.deltaTime * movementSpeed);
+            myCC.Move(-transform.right * Time.deltaTime * movementSpeed);
+        }
+        if(Input.GetKey(KeyCode.Space))
+        {
+            myCC.Move(transform.up * Time.deltaTime * movementSpeed);
         }
     }
 }

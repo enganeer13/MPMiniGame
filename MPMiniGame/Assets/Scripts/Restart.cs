@@ -14,12 +14,12 @@ public class Restart : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKey(KeyCode.Escape))
+        if (Input.GetKey(KeyCode.Tab))
         {
             SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         }
 
-        if (Input.GetKey(KeyCode.Home))
+        if (Input.GetKey(KeyCode.Escape))
         {
             SceneManager.LoadScene(0);
         }
