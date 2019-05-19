@@ -6,7 +6,7 @@ public class Cannon : MonoBehaviour, Trap
 {
     public float force;
     public float cooldownOffset;
-    public string tag;
+    public GameObject projectile;
     private Vector3 direction;
     private float timer;
     // Start is called before the first frame update
@@ -24,8 +24,8 @@ public class Cannon : MonoBehaviour, Trap
     {
         if (Time.time >= timer + cooldownOffset)
         {
-            GameObject projectile = ObjectPooler.Instance.SpawnFromPool(tag, transform.position, Quaternion.identity);
-            projectile.GetComponent<Rigidbody2D>().AddForce(direction * force);
+            GameObject shot = ObjectPooler.Instance.SpawnFromPool(projectile.name, transform.position, Quaternion.identity);
+            shot.GetComponent<Rigidbody2D>().AddForce(direction * force);
             timer = Time.time;
         }
     }

@@ -135,7 +135,11 @@ public class characterController : MonoBehaviour
 		}
         else if(jump && (doubleJump > 0))
         {
+<<<<<<< HEAD
             m_Velocity = Vector3.zero;
+=======
+            m_Rigidbody2D.velocity = Vector3.zero;
+>>>>>>> master
             m_Rigidbody2D.AddForce(new Vector2(0f, m_JumpForce));
             doubleJump--;
         }
