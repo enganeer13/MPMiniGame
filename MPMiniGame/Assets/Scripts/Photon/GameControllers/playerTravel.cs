@@ -23,10 +23,10 @@ public class playerTravel : MonoBehaviour
     {
         if(PV.IsMine)
         {
-            BasicMovement();
+            //BasicMovement();
         }
     }
-
+    /*
     void BasicMovement()
     {
         if(Input.GetKey(KeyCode.D))
@@ -42,5 +42,5 @@ public class playerTravel : MonoBehaviour
         {
             myCC.Move(transform.up * Time.deltaTime * movementSpeed);
         }
-    }
+    }*/
 }
