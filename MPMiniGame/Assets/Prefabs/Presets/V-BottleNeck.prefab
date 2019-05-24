@@ -703,11 +703,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5950667627925182031}
     m_Modifications:
-    - target: {fileID: 1595861311989194197, guid: 9b3ab25ce9867264abdff68cf286dc2e,
-        type: 3}
-      propertyPath: m_Name
-      value: MoveAlong
-      objectReference: {fileID: 0}
     - target: {fileID: 1595861311989194193, guid: 9b3ab25ce9867264abdff68cf286dc2e,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -762,6 +757,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1595861311989194197, guid: 9b3ab25ce9867264abdff68cf286dc2e,
+        type: 3}
+      propertyPath: m_Name
+      value: MoveAlong
       objectReference: {fileID: 0}
     - target: {fileID: 8865463141532531360, guid: 9b3ab25ce9867264abdff68cf286dc2e,
         type: 3}
