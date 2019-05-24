@@ -14,7 +14,7 @@ public class PhotonRoom : MonoBehaviourPunCallbacks, IInRoomCallbacks
 
     public bool isGameLoaded;
     public int currentScene;
-    //public int multiplayerScene;
+    public int multiplayerScene;
 
     //Player info
     private Player[] photonPlayers;
@@ -166,9 +166,10 @@ public class PhotonRoom : MonoBehaviourPunCallbacks, IInRoomCallbacks
         isGameLoaded = true;
         if(!PhotonNetwork.IsMasterClient)
             return;
-        
+
 
         PhotonNetwork.LoadLevel(MultiplayerSetting.multiplayerSetting.multiplayerScene);
+        //PhotonNetwork.LoadLevel(multiplayerScene);
     }
 
     void RestartTimer()
@@ -198,6 +199,8 @@ public class PhotonRoom : MonoBehaviourPunCallbacks, IInRoomCallbacks
             }
 
         }
+
+
     }
 
     /*
