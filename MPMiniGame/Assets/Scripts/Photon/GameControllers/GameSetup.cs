@@ -5,7 +5,7 @@ using UnityEngine;
 public class GameSetup : MonoBehaviour
 {
     public static GameSetup GS;
-    //public Transform[] spawnPointsTrapMaster;
+    public Transform[] spawnPointsTrapMaster;
     public int nextPlayersTeam;
     //public Transform[] spawnPointsRunners;
 
