@@ -31,5 +31,6 @@ MonoBehaviour:
   RpcList:
   - RPC_CreatePlayer
   - RPC_LoadedGameScene
+  - RPC_GetTeam
   DisableAutoOpenWizard: 1
   ShowSettings: 0
