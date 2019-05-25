@@ -583,9 +583,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 69ffcd33cfbb147799071d2004c5a429, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nextPlayersTeam: 1
+  spawnPointsTrapMaster: []
+  nextPlayersTeam: 2
   spawnPoints:
   - {fileID: 1403364164}
+  - {fileID: 2086332860}
 --- !u!4 &1391953440
 Transform:
   m_ObjectHideFlags: 0
