@@ -927,11 +927,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player 1
       objectReference: {fileID: 0}
-    - target: {fileID: 17894089192988839, guid: 4eeb4371fb01247f8bd97446bb4746af,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 17894089192988833, guid: 4eeb4371fb01247f8bd97446bb4746af,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -987,11 +982,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 17894089192989532, guid: 4eeb4371fb01247f8bd97446bb4746af,
-        type: 3}
-      propertyPath: doubleJump
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 599104583988346892, guid: 4eeb4371fb01247f8bd97446bb4746af,
         type: 3}
       propertyPath: viewIdField
@@ -1000,6 +990,11 @@ PrefabInstance:
     - target: {fileID: 599104583988346892, guid: 4eeb4371fb01247f8bd97446bb4746af,
         type: 3}
       propertyPath: InstantiationId
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 17894089192989532, guid: 4eeb4371fb01247f8bd97446bb4746af,
+        type: 3}
+      propertyPath: doubleJump
       value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []

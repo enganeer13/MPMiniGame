@@ -1,10 +1,12 @@
-﻿using System.Collections;
+﻿using Photon.Pun;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class playerMovement : MonoBehaviour
 {
-    public characterController controller;
+    public PhotonView PV;
+    public CharacterController controller;
     public float horizontalMove = 0f;
     public float runSpeed = 40f;
     public bool jump = false;
@@ -14,12 +16,14 @@ public class playerMovement : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        PV = GetComponent<PhotonView>();
     }
 
     // Update is called once per frame
     void Update()
     {
+        if (PV.IsMine)
+        {
         horizontalMove = Input.GetAxisRaw("Horizontal") * runSpeed;
 
         animator.SetFloat("Speed", Mathf.Abs(horizontalMove));
@@ -28,6 +32,7 @@ public class playerMovement : MonoBehaviour
         {
             jump = true;
             animator.SetBool("isJumping", true);
+        }
         }
 
     }

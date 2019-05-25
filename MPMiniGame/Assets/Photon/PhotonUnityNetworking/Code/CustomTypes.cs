@@ -12,8 +12,8 @@
 namespace Photon.Pun
 {
     using UnityEngine;
-    using ExitGames.Client.Photon;
     using Photon.Realtime;
+    using ExitGames.Client.Photon;
 
 
     /// <summary>
