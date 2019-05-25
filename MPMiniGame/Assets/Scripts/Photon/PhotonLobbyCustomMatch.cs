@@ -13,6 +13,9 @@ public class PhotonLobbyCustomMatch : MonoBehaviourPunCallbacks, ILobbyCallbacks
     public int roomSize;
     public GameObject roomListingPrefab;
     public Transform roomsPanel;
+    public int i = 1;
+
+    public List<RoomInfo> roomListings;
 
     private void Awake()
     {
@@ -23,29 +26,67 @@ public class PhotonLobbyCustomMatch : MonoBehaviourPunCallbacks, ILobbyCallbacks
     void Start()
     {
         PhotonNetwork.ConnectUsingSettings(); //Connects to Master photon server
+        roomListings = new List<RoomInfo>();
     }
 
     public override void OnConnectedToMaster()
     {
         Debug.Log("Player has connected to the Photon master server");
         PhotonNetwork.AutomaticallySyncScene = true;
+        if (i == 1 || i < 5)
+        {
+            PhotonNetwork.NickName = ("Player " + i);
+            i++;
+        }
+
     }
 
     public override void OnRoomListUpdate(List<RoomInfo> roomList)
     {
         base.OnRoomListUpdate(roomList);
-        RemoveRoomListings();
+        //RemoveRoomListings();
+        int tempIndex;
+
         foreach(RoomInfo room in roomList)
         {
+            if(roomListings != null)
+            {
+                //tempIndex = roomListings.FindIndex(ByName(room.Name));
+            }
+            //else
+            //{
+                //tempIndex = -1;
+            //}
+            //if(tempIndex != -1)
+            //{
+                //roomListings.RemoveAt(tempIndex);
+                //Destroy(roomsPanel.GetChild(tempIndex).gameObject);
+            //}
+            else
+            {
+                //roomListings.Add(room);
+                //ListRoom(room);
+            }
             ListRoom(room);
         }
     }
 
+    static System.Predicate<RoomInfo> ByName(string name)
+    {
+        return delegate (RoomInfo room)
+        {
+            return room.Name == name;
+        };
+    }
+
     void RemoveRoomListings()
     {
+        int i = 0;
+
         while(roomsPanel.childCount != 0)
         {
-            Destroy(roomsPanel.GetChild(0).gameObject);
+            Destroy(roomsPanel.GetChild(i).gameObject);
+            i++;
         }
     }
 

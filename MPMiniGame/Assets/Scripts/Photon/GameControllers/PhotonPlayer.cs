@@ -16,7 +16,14 @@ public class PhotonPlayer : MonoBehaviour
         PV = GetComponent<PhotonView>();
         if(PV.IsMine)
         {
-            PV.RPC("RPC_GetTeam", RpcTarget.MasterClient);
+        PV.RPC("RPC_GetTeam", RpcTarget.MasterClient);
+        }
+
+        int spawnPicker = Random.Range(0, GameSetup.GS.spawnPoints.Length);
+        if (PV.IsMine)
+        {
+            myAvatar = PhotonNetwork.Instantiate(Path.Combine("PhotonPrefabs", "Player 1"),
+                                                 GameSetup.GS.spawnPoints[spawnPicker].position, GameSetup.GS.spawnPoints[spawnPicker].rotation, 0);
         }
 
     }
@@ -24,6 +31,18 @@ public class PhotonPlayer : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        /*
+        if (myTeam == 1)
+        {
+            int spawnPicker = Random.Range(0, GameSetup.GS.spawnPoints.Length);
+            if (PV.IsMine)
+            {
+                myAvatar = PhotonNetwork.Instantiate(Path.Combine("PhotonPrefabs", "Player 1"),
+                                                     GameSetup.GS.spawnPoints[spawnPicker].position, GameSetup.GS.spawnPoints[spawnPicker].rotation, 0);
+            }
+        }*/
+
+        /*
         if (myAvatar == null && myTeam != 0)
         {
             if (myTeam == 1)
@@ -31,7 +50,7 @@ public class PhotonPlayer : MonoBehaviour
                 int spawnPicker = Random.Range(0, GameSetup.GS.spawnPointsTrapMaster.Length);
                 if (PV.IsMine)
                 {
-                    myAvatar = PhotonNetwork.Instantiate(Path.Combine("PhotonPrefabs", "TrapMaster"),
+                    myAvatar = PhotonNetwork.Instantiate(Path.Combine("PhotonPrefabs", "Player 1"),
                                                          GameSetup.GS.spawnPointsTrapMaster[spawnPicker].position, GameSetup.GS.spawnPointsTrapMaster[spawnPicker].rotation, 0);
                 }
             }
@@ -45,7 +64,7 @@ public class PhotonPlayer : MonoBehaviour
                                                          GameSetup.GS.spawnPointsRunners[spawnPicker].position, GameSetup.GS.spawnPointsRunners[spawnPicker].rotation, 0);
                 }
             }
-        }
+        }*/
     }
 
     [PunRPC]
@@ -60,4 +79,5 @@ public class PhotonPlayer : MonoBehaviour
     {
         myTeam = whichTeam;
     }
+
 }
