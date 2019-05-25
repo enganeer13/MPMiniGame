@@ -18,6 +18,13 @@ public class PhotonPlayer : MonoBehaviour
         {
         PV.RPC("RPC_GetTeam", RpcTarget.MasterClient);
         }
+        /*
+        int spawnPicker = Random.Range(0, GameSetup.GS.spawnPoints.Length);
+        if (PV.IsMine)
+        {
+            myAvatar = PhotonNetwork.Instantiate(Path.Combine("PhotonPrefabs", "Player 1"),
+                                                 GameSetup.GS.spawnPoints[spawnPicker].position, GameSetup.GS.spawnPoints[spawnPicker].rotation, 0);
+        }*/
 
     }
 
@@ -28,11 +35,11 @@ public class PhotonPlayer : MonoBehaviour
         {
             if (myTeam == 1)
             {
-                int spawnPicker = Random.Range(0, GameSetup.GS.spawnPoints.Length);
+                int spawnPicker = Random.Range(0, GameSetup.GS.spawnPointsTrapMaster.Length);
                 if (PV.IsMine)
                 {
                     myAvatar = PhotonNetwork.Instantiate(Path.Combine("PhotonPrefabs", "TrapMaster"),
-                                                         GameSetup.GS.spawnPoints[spawnPicker].position, GameSetup.GS.spawnPoints[spawnPicker].rotation, 0);
+                                                         GameSetup.GS.spawnPointsTrapMaster[spawnPicker].position, GameSetup.GS.spawnPointsTrapMaster[spawnPicker].rotation, 0);
                 }
             }
 
@@ -56,9 +63,10 @@ public class PhotonPlayer : MonoBehaviour
         PV.RPC("RPC_SentTeam", RpcTarget.OthersBuffered, myTeam);
     }
 
+    [PunRPC]
     void RPC_SentTeam(int whichTeam)
     {
-        whichTeam = 2;
+        //whichTeam = 2;
         myTeam = whichTeam;
     }
 

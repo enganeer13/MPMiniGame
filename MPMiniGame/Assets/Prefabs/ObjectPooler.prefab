@@ -44,51 +44,42 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pools:
-  - tag: Box
-    prefab: {fileID: 2940030034227328971, guid: 4e5c28d154fa51b4e922ba0e52dfa24e,
+  - prefab: {fileID: 2940030034227328971, guid: 4e5c28d154fa51b4e922ba0e52dfa24e,
       type: 3}
     size: 10
-  - tag: v-bottleNeck
-    prefab: {fileID: 1738962844692946595, guid: 4dc3215bfc26d434cab8f367862d5981,
+  - prefab: {fileID: 1738962844692946595, guid: 4dc3215bfc26d434cab8f367862d5981,
       type: 3}
     size: 1
-  - tag: burpees
-    prefab: {fileID: 1738962844692946595, guid: 74e6bea8434707742ae0f7d13bf74187,
+  - prefab: {fileID: 1738962844692946595, guid: 74e6bea8434707742ae0f7d13bf74187,
       type: 3}
     size: 1
-  - tag: pitOfDespair
-    prefab: {fileID: 1738962844692946595, guid: c0bd9785285d41f48bf5149ea9ad0cda,
+  - prefab: {fileID: 1738962844692946595, guid: c0bd9785285d41f48bf5149ea9ad0cda,
       type: 3}
     size: 1
-  - tag: hot-stepTowers
-    prefab: {fileID: 1738962844692946595, guid: 834e4eddaa1f7324fb786e9aad5154c0,
+  - prefab: {fileID: 1738962844692946595, guid: 834e4eddaa1f7324fb786e9aad5154c0,
       type: 3}
     size: 1
-  - tag: Glue
-    prefab: {fileID: 1050375432710741748, guid: ee79c1647cf4f044f9d010b977f5a037,
+  - prefab: {fileID: 1050375432710741748, guid: ee79c1647cf4f044f9d010b977f5a037,
       type: 3}
-    size: 3
-  - tag: GlueDrop
-    prefab: {fileID: 4891710461677162776, guid: 766f6ceff8df3034ebdf95e093e51ece,
+    size: 5
+  - prefab: {fileID: 4891710461677162776, guid: 766f6ceff8df3034ebdf95e093e51ece,
       type: 3}
-    size: 3
-  - tag: BouncyBlade
-    prefab: {fileID: 8585523440785362163, guid: a97f6dc3752589f4e9310e52cb17fdcd,
+    size: 5
+  - prefab: {fileID: 8585523440785362163, guid: a97f6dc3752589f4e9310e52cb17fdcd,
       type: 3}
     size: 15
-  - tag: CannonBall
-    prefab: {fileID: 6710408707775332417, guid: 2f755440c20296a448c866e22a140d48,
+  - prefab: {fileID: 6710408707775332417, guid: 2f755440c20296a448c866e22a140d48,
       type: 3}
     size: 6
-  - tag: decisions
-    prefab: {fileID: 1738962844692946595, guid: 2d5cc35761cb9c84d83f4b0b475249de,
+  - prefab: {fileID: 1738962844692946595, guid: 2d5cc35761cb9c84d83f4b0b475249de,
       type: 3}
     size: 1
-  - tag: grapeValley
-    prefab: {fileID: 1738962844692946595, guid: 3283e0f21dd6e0a4ebb5fc4b53b30f43,
+  - prefab: {fileID: 1738962844692946595, guid: 3283e0f21dd6e0a4ebb5fc4b53b30f43,
       type: 3}
     size: 1
-  - tag: snakeValley
-    prefab: {fileID: 1738962844692946595, guid: 7f3ba58fb4746fb41a38ca63c2f27e90,
+  - prefab: {fileID: 1738962844692946595, guid: 7f3ba58fb4746fb41a38ca63c2f27e90,
+      type: 3}
+    size: 1
+  - prefab: {fileID: 1738962844692946595, guid: c267a5d275d00114c8496ae2cb6d6dc6,
       type: 3}
     size: 1
