@@ -90,7 +90,7 @@ public class TrapMaster : MonoBehaviour
             RaycastHit2D[] rays = Physics2D.BoxCastAll(transform.position, new Vector2(1, 1), 0, Vector2.down);
             foreach(RaycastHit2D ray in rays)
             {
-                if (ray.collider.GetComponent<Trap>() != null)
+                if (ray.collider.GetComponent<Trap>() != null && !ray.collider.CompareTag("Spikes"))
                 {
                     ray.collider.GetComponent<Trap>().activate();
                 }
